@@ -1,3 +1,3 @@
 <?php
-    echo 'te';
+    echo 'test';
 ?>
