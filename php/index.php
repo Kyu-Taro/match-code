@@ -1,3 +1,3 @@
 <?php
-    echo 'uu';
+    echo 'u';
 ?>
