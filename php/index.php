@@ -32,7 +32,7 @@
         </p>
     </section>
     <section class="detail-container">
-a
+
     </section>
 </body>
 </html>
