@@ -9,16 +9,22 @@
 </head>
 <body>
     <header>
-        <a href="index.php"><img src="../img/logo.png" alt="ロゴ"></a>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="register-view.php">Regist</a></li>
-                <li><a href="login-view.php">Login</a></li>
-                <li><a href="post-view.php">Post</a></li>
-                <li><a href="teams-view.php">Team</a></li>
-                <li><a href="detail.html">Detail</a></li>
-            </ul>
-        </nav>
+            <h1 class="logo"><a href="index.php">Match-Code</a></h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="register-view.php">Regist</a></li>
+                    <li><a href="login-view.php">Login</a></li>
+                    <li><a href="post-view.php">Post</a></li>
+                    <li><a href="teams-view.php">Team</a></li>
+                    <li><a href="detail.html">Detail</a></li>
+                </ul>
+            </nav>
     </header>
+    <section class="top-container">
+        
+    </section>
+    <section class="detail-container">
+
+    </section>
 </body>
 </html>
