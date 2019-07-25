@@ -21,7 +21,15 @@
             </nav>
     </header>
     <section class="top-container">
-        
+        <h1 class="top-title">
+            ~Match-Code~<br/>
+            First time team development
+        </h1>
+        <p class="top-coment">
+            駆け出しプログラニング・デザイナーのためのサービス<br/>
+            一人ではできないチーム開発を<span class="top-span">Match-code</span>なら<br/>
+            初めてのチーム開発をここで
+        </p>
     </section>
     <section class="detail-container">
 
