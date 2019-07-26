@@ -1,4 +1,4 @@
-body,ul,h1{
+body,ul,h1,p{
     margin: 0;
     padding: 0;
 }
@@ -37,6 +37,7 @@ h1.logo{
     color: white;
     text-decoration: none;
     font-family: 'Impact';
+    font-size: 45px;
 }
 .header-nav{
     float: right;
@@ -84,9 +85,71 @@ li a:hover{
     color: white;
     text-align: center;
     font-size: 30px;
+    margin-top: 30px;
 }
 .top-span{
     color: orange;
     font-family: 'Impact';
     letter-spacing: 4px;
 }
+
+/* 
+=====================
+        説明欄
+=====================        
+ */
+.detail-container{
+    background: rgb(24, 24, 24);
+    height: 490px;
+    color: white;
+    text-align: center;
+}
+.detail-title{
+    padding-top: 65px;
+    font-size: 60px;
+}
+.detail-coment{
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+}
+.detail-link{
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 166, 0);
+    padding: 20px 40px;
+    border-radius: 3px;
+}
+.detail-link:hover{
+    background: rgb(253, 184, 56);
+}
+
+/* 
+===========================
+         ご利用方法
+===========================
+ */
+.usage-container{
+    background: rgb(143, 143, 143);
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+.usage-title{
+    padding-top: 65px;
+    font-size: 60px;
+}
+.usage-coment{
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+}
+
+/* 
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+ }
+
