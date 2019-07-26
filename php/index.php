@@ -48,7 +48,7 @@
         </div>
     </section>
     <section class="usage-container">
-        <div class="usage-top site-width scroll-section2">
+        <div class="usage-top site-width scroll-section">
             <h1 class="usage-title">ご利用について</h1>
             <p class="usage-coment">
                 完全無料で全ての機能をお使い頂けます<br/>
