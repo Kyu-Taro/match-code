@@ -45,12 +45,11 @@
                         <input type="bumber" name="age">
                     </label><br>
                     <label>Twitter
-                        <input type="text" name="twitter">
-                        <option value=""
+                        <input type="checkbox" name="twitter">
                     </label><br>
                     <label>
-                        <select type="checkbox" name="type">
-
+                        <input type="checkbox" name="type[]" value="engineer">エンジニア
+                        <input type="checkbox" name="type[]" value="designer">デザイナー
                     </label><br>
                     <label>Skill
                         <textarea name="skill" cols=50 rows=5></textarea>
