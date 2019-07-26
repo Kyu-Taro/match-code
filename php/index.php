@@ -56,7 +56,17 @@
         </div>
     </section>
     <footer>
-        
+        <span class="scroll">^</span>
+        <nav class="footer-nav site-width">
+            <ul>
+                <li><a href="register-view.php">Regist</a></li>
+                <li><a href="login-view.php">Login</a></li>
+                <li><a href="post-view.php">Post</a></li>
+                <li><a href="teams-view.php">Team</a></li>
+                <li><a href="detail.html">Detail</a></li>
+            </ul>
+        </nav>
+        <p class="footer-coment">Copyright © 2007-2012 Kytaro&Mochi All Rights Reserved.</p>
     </footer>
 </body>
 </html>

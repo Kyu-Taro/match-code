@@ -47,7 +47,7 @@ h1.logo{
     margin-right: 30px;
     line-height: 95px;
 }
-li a{
+.header-nav ul li a{
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -151,5 +151,46 @@ li a:hover{
  footer{
      height: 180px;
      background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
  }
 
