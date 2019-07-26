@@ -1,3 +1,16 @@
+<?php
+    $url1="register-view.php";
+    $url2="login-view.php";
+    $url3="post-view.php";
+    $url4="teams-veiw.php";
+    $url5="detail.html";
+    $link1="Regist";
+    $link2="Login";
+    $link3="Post";
+    $link4="Team";
+    $link5="Detail";
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -8,18 +21,7 @@
     <title>Match-Code</title>
 </head>
 <body>
-    <header>
-            <h1 class="logo"><a href="index.php">Match-Code</a></h1>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="register-view.php">Regist</a></li>
-                    <li><a href="login-view.php">Login</a></li>
-                    <li><a href="post-view.php">Post</a></li>
-                    <li><a href="teams-view.php">Team</a></li>
-                    <li><a href="detail.html">Detail</a></li>
-                </ul>
-            </nav>
-    </header>
+    <?php include('header.php'); ?>
     <section class="top-container">
         <h1 class="top-title">
             ~Match-Code~<br/>
@@ -55,18 +57,6 @@
             <a href="detail.html" class="detail-link">Click here for details</a>
         </div>
     </section>
-    <footer>
-        <span class="scroll">^</span>
-        <nav class="footer-nav site-width">
-            <ul>
-                <li><a href="register-view.php">Regist</a></li>
-                <li><a href="login-view.php">Login</a></li>
-                <li><a href="post-view.php">Post</a></li>
-                <li><a href="teams-view.php">Team</a></li>
-                <li><a href="detail.html">Detail</a></li>
-            </ul>
-        </nav>
-        <p class="footer-coment">Copyright © 2007-2012 Kytaro&Mochi All Rights Reserved.</p>
-    </footer>
+    <?php include('footer.php')?>
 </body>
 </html>
