@@ -3,8 +3,8 @@
     $url1="register-view.php";
     $url2="login-view.php";
     $url3="post-view.php";
-    $url4="teams-veiw.php";
-    $url5="detail.html";
+    $url4="team-view.php";
+    $url5="../html/detail.html";
     $link1="Regist";
     $link2="Login";
     $link3="Post";
@@ -36,7 +36,7 @@
         </p>
     </section>
     <section class="detail-container">
-        <div class="detail-top site-width">
+        <div class="detail-top site-width scroll-section">
             <h1 class="detail-title"><span class="top-span">Match-Code</span>とは</h1>
             <p class="detail-coment">
                 独学でプログラミング、デザインを勉強していると<br/>
@@ -48,7 +48,7 @@
         </div>
     </section>
     <section class="usage-container">
-        <div class="usage-top site-width">
+        <div class="usage-top site-width scroll-section">
             <h1 class="usage-title">ご利用について</h1>
             <p class="usage-coment">
                 完全無料で全ての機能をお使い頂けます<br/>

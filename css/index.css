@@ -80,12 +80,14 @@ li a:hover{
     text-align: center;
     font-size: 83px;
     padding-top: 180px;
+    display: none;
 }
 .top-coment{
     color: white;
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
+    display: none;
 }
 .top-span{
     color: orange;
