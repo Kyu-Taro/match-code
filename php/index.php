@@ -1,4 +1,5 @@
 <?php
+//ヘッダーとフッターに使うリンク
     $url1="register-view.php";
     $url2="login-view.php";
     $url3="post-view.php";
