@@ -55,7 +55,7 @@ h1.logo{
 .logo{
     color: white;
 }
-li a:hover{
+header ul li a:hover{
     color: orange;
     text-decoration: underline;
 }
@@ -102,9 +102,12 @@ li a:hover{
  */
 .detail-container{
     background: rgb(24, 24, 24);
-    height: 490px;
+    height: 500px;
     color: white;
     text-align: center;
+}
+.detail-top{
+    height: 500px;
 }
 .detail-title{
     padding-top: 65px;
@@ -135,6 +138,9 @@ li a:hover{
     height: 500px;
     text-align: center;
     color: white;
+}
+.usage-top{
+    height: 500px;
 }
 .usage-title{
     padding-top: 65px;

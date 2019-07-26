@@ -29,15 +29,4 @@ $(function(){
         });
     });
 
-    // $('.scroll-section2').css('display','none');
-    // $(window).scroll(function(){
-    //     $('.scroll-section2').each(function(){
-    //         var imgPos2 = $(this).offset().top;
-    //         var scroll2 = $(window).scrollTop();
-    //         var windowHeight2 = $(window).height();
-    //         if(scroll2 > (imgPos2 - windowHeight2) + (windowHeight2 / 5)){
-    //             $('.scroll-section2').fadeIn(3200);
-    //         }
-    //     });
-    // });
 });
