@@ -14,7 +14,7 @@ $(function(){
 
     setTimeout(function(){
         $('.top-coment').slideDown(2600);
-    },650);
+    },10);
 
     //TOPページコンテンツを可視範囲に入ってから表示させる
     $('.scroll-section').css('display','none');
