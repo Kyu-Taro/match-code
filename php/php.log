@@ -192,3 +192,9 @@ Stack trace:
 [27-Jul-2019 20:36:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
 [27-Jul-2019 20:36:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
 [27-Jul-2019 20:37:21 Asia/Tokyo] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\xampp\htdocs\match-code\php\register-view.php on line 3
+[27-Jul-2019 11:39:53 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 3
+[27-Jul-2019 11:50:50 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 11:51:21 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
+[27-Jul-2019 11:51:55 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
+[27-Jul-2019 11:52:00 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
+[27-Jul-2019 11:54:04 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
