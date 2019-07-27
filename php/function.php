@@ -95,8 +95,3 @@ function harfCheck($str, $key){
     $err_msg[$key] = ERROR7;
     }
 }
-
-// DBのEmailと重複してないかチェック
-function matchEmail($str, $ley){
-    getDb();
-}
