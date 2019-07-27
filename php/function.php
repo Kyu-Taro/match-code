@@ -64,7 +64,7 @@ function ageCheck($str,$key){
 
 //パスワードが一致するかのチェック
 function passCheck($str,$str2,$key){
-    if(!$str == $str2){
+    if($str !== $str2){
         global $err_msg;
         $err_msg[$key]=ERROR4;
     }
