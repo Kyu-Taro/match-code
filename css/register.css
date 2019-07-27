@@ -117,7 +117,7 @@ header ul li a:hover{
 ======================
  */
  .top-container{
-    height: 800px;
+    height: 1400px;
     background-image: url(../img/top-img.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -127,6 +127,7 @@ header ul li a:hover{
     padding: 150px 0 300px 0;
     color: white;
     background: #00000094;
+    height: 1000px;
     display: none;
 }
 form{
@@ -143,7 +144,7 @@ h1{
     font-size: 40px;
     color: orange;
 }
-input[type="text"],textarea,input[type="password"],input[type="number"]{
+input[type="text"],textarea,input[type="password"],input[type="tel"]{
     margin-top: 10px;
     margin-bottom: 20px;
     width: 80%;

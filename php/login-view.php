@@ -5,7 +5,7 @@
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
-    $link1="TOP";
+    $link1="Top";
     $link2="Regist";
     $link3="Post";
     $link4="Team";
@@ -24,11 +24,23 @@
 </head>
 <body>
     <?php include('header.php'); ?>
-    <section class="top-container">
-        a
-    </section>
-    
-        
+    <main class="top-container">
+        <section class="form-container">
+            <div class="site-width">
+                <h1>Login</h1>
+                <form>
+                    <label>Email<br/>
+                        <input type="text" name="email">
+                    </label><br>
+                    <label>Password<br/>
+                        <input type="password" name="pass">
+                    </label><br>
+                    <input type="checkbox" value="login">ログイン状態を保持する<br/>
+                    <input type="submit" value="SEND">
+                </form>
+            </div>
+        </section>
+    </main>        
     <?php include('footer.php')?>
     <script src="../js/index.js"></script>
 </body>
