@@ -29,4 +29,10 @@ $(function(){
         });
     });
 
+    //会員登録のスライド
+    setTimeout(function(){
+        $('.form-container').fadeIn(1000);
+    },500);
+
+
 });

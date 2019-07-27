@@ -61,97 +61,6 @@ header ul li a:hover{
 }
 
 /* 
-=======================
-        topの画像
-=======================
-*/
-.top-container{
-    height: 800px;
-    background-image: url(../img/top-img.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-}
-.detail-container{
-    height: 1000px;
-    z-index: 2;
-}
-.top-title{
-    color: white;
-    text-align: center;
-    font-size: 83px;
-    padding-top: 180px;
-    display: none;
-}
-.top-coment{
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-    display: none;
-}
-.top-span{
-    color: orange;
-    font-family: 'Impact';
-    letter-spacing: 4px;
-}
-
-/* 
-=====================
-        説明欄
-=====================        
- */
-.detail-container{
-    background: rgb(24, 24, 24);
-    height: 500px;
-    color: white;
-    text-align: center;
-}
-.detail-top{
-    height: 500px;
-}
-.detail-title{
-    padding-top: 65px;
-    font-size: 60px;
-}
-.detail-coment{
-    font-size: 25px;
-    margin: 30px 0 50px 0;
-}
-.detail-link{
-    text-decoration: none;
-    color: white;
-    background: rgb(255, 166, 0);
-    padding: 20px 40px;
-    border-radius: 3px;
-}
-.detail-link:hover{
-    background: rgb(253, 184, 56);
-}
-
-/* 
-===========================
-         ご利用方法
-===========================
- */
-.usage-container{
-    background: rgb(143, 143, 143);
-    height: 500px;
-    text-align: center;
-    color: white;
-}
-.usage-top{
-    height: 500px;
-}
-.usage-title{
-    padding-top: 65px;
-    font-size: 60px;
-}
-.usage-coment{
-    font-size: 25px;
-    margin: 30px 0 50px 0;
-}
-
-/* 
 ======================
         フッター
 ======================
@@ -201,13 +110,63 @@ header ul li a:hover{
      letter-spacing: 2px;
      font-size: 13px;
  }
+
 /* 
 ======================
         フォーム
 ======================
  */
+ .top-container{
+    height: 1400px;
+    background-image: url(../img/top-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 23px;
+}
 .form-container{
-    height: 600px;
+    padding: 150px 0 300px 0;
+    color: white;
     background: #00000094;
-    padding: 150px 30%;
+    height: 1000px;
+    display: none;
+}
+form{
+    margin: auto;
+    width: 50%;
+}
+p{
+    width: 50%;
+    margin: auto;
+}
+h1{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+input[type="text"],textarea,input[type="password"],input[type="number"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 10px 0;
+}
+input[type="radio"]{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+form label{
+    margin-top: 20px;
+}
+input[type="submit"]{
+    padding: 10px 15px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: orange;
 }
