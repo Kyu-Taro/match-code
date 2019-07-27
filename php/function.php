@@ -17,6 +17,7 @@ const ERROR3="※パスワードは4文字以上で設定してください";
 const ERROR4="※パスワードが一致しません";
 const ERROR5="※数字のみで入力してください";
 const ERROR6="※そのメールアドレスは既に登録されています";
+const ERROR7="※半角英数字で入力してください";
 
 //エラーメッセージの配列
 $err_msg=[];
@@ -76,4 +77,17 @@ function passCheckNumber($str,$key){
     if(mb_strlen($str) < 4){
         $err_msg[$key]=ERROR3;
     }
+}
+
+// 半角英数字チェック
+function harfCheck($str, $key){
+    if(!preg_match("/^[a-zA-Z0-9]+$/", $str)){
+    global $err_msg;
+    $err_msg[$key] = ERROR7;
+    }
+}
+
+// DBのEmailと一致するものがあるかチェック
+function matchEmail($str, $ley){
+
 }
