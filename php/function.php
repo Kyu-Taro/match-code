@@ -1,7 +1,13 @@
 <?php
 //sessionの開始と有効期限の変更
+<<<<<<< HEAD
 session_save_path("c:/xampp/php/tmp");
 // session_save_path("/var/tmp");
+=======
+session_start();
+session_save_path("c/:xampp/php/tmp");
+session_save_path("/var/tmp");
+>>>>>>> origin/master
 ini_set('session.gc_maxlifetime',60*60*24*30);
 ini_set('session.cookie_lifetime',60*60*24*30);
 session_start();
