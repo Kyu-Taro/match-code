@@ -98,3 +98,8 @@ Stack trace:
   thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 45
 [27-Jul-2019 10:02:53 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
 [27-Jul-2019 10:16:33 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 11:12:44 UTC] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 38
+[27-Jul-2019 11:12:44 UTC] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 38
+[27-Jul-2019 11:12:44 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 50
+[27-Jul-2019 11:12:44 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 51
+[27-Jul-2019 11:12:49 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
