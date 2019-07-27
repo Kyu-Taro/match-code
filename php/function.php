@@ -21,6 +21,15 @@ const ERROR6="※そのメールアドレスは既に登録されています";
 //エラーメッセージの配列
 $err_msg=[];
 
+//デバッグの設定
+$debug_flg=true;
+function debug($str){
+    global $debug_flg;
+    if ($debug_flg) {
+        error_log('デバッグ:'.$str);
+    }
+}
+
 //DBの接続
 function getDb(){
     $db="mysql:dbname=match_code; host=localhost; charset=utf8";
