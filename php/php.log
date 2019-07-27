@@ -1,0 +1,100 @@
+[27-Jul-2019 08:35:44 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:35:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function emoty() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:26
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 26
+[27-Jul-2019 08:36:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function emoty() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:26
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 26
+[27-Jul-2019 08:37:38 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:37:47 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:40:28 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:46:51 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:46:51 UTC] PHP Notice:  Undefined index: email in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 60
+[27-Jul-2019 08:46:51 UTC] PHP Notice:  Undefined index: pass in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 61
+[27-Jul-2019 08:46:51 UTC] PHP Notice:  Undefined index: acount in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 63
+[27-Jul-2019 08:50:10 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:50:19 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:50:30 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:52:21 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:52:39 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:52:43 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:53:29 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:54:23 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:54:27 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:54:55 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:55:33 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:56:59 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:57:11 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 08:58:06 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 08:58:10 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 08:58:13 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:05:43 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:06:13 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:06:19 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:06:24 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:06:26 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:17:10 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:18:41 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:19:22 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:21:32 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:22:25 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:26:50 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:31:53 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:32:56 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:34:56 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 12
+[27-Jul-2019 09:37:46 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 09:37:50 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 09:39:33 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 11
+[27-Jul-2019 09:43:44 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 09:45:07 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 09:45:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:48:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:48:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:48:42 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 09:48:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:51:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:56:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:57:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:44
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 44
+[27-Jul-2019 09:58:22 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'DEFAULT_FETCH_MODE' in /Applications/MAMP/htdocs/match-code/php/function.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/match-code/php/register-logic.php(42): getDb()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/function.php on line 29
+[27-Jul-2019 09:59:18 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'DEFAULT_FETCH_MODE' in /Applications/MAMP/htdocs/match-code/php/function.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/match-code/php/register-logic.php(42): getDb()
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/function.php on line 29
+[27-Jul-2019 10:01:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:45
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 45
+[27-Jul-2019 10:01:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function queryPost() in /Applications/MAMP/htdocs/match-code/php/register-logic.php:45
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 45
+[27-Jul-2019 10:02:53 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10
+[27-Jul-2019 10:16:33 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-logic.php on line 10

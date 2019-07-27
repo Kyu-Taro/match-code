@@ -1,4 +1,6 @@
 <?php
+require('function.php');
+
 //ヘッダーとフッターに使うリンク
     $url1="index.php";
     $url2="login-view.php";
@@ -18,7 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <link rel="stylesheet" href="../css/register.css" type="text/css">
     <title>Match-Code</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
@@ -28,34 +30,31 @@
         <section class="form-container">
             <div class="site-width">
             <h1>Member registration</h1>
-                <form>
-                        <label>Name<br/>
-                            <input type="text" name="name">
+                <form action="register-logic.php" method="POST">
+                        <label>Name<span class="error"><?php if(!empty($_SESSION['error']['name'])) echo $_SESSION['error']['name']?> </span><br/>
+                            <input type="text" name="name" value="<?php if(!empty($_SESSION['name'])) echo $_SESSION['name']?>">
                         </label><br>
                         <label>Email<br/>
-                            <input type="text" name="email">
+                            <input type="text" name="email" value="<?php if(empty(!$_SESSION['email'])) echo $_SESSION['email']?>">
                         </label><br>
-                        <label>Password<br/>
+                        <label>Password<?php if(!empty($_SESSION['error']['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($_SESSION['error']['pass'])) echo $_SESSION['error']['pass']?></span><br/>
                             <input type="password" name="pass">
                         </label><br>
-                        <label>Retype password<br/>
+                        <label>Retype password<?php if(!empty($_SESSION['error']['repass']))  echo "<br/>"?><span class="error"><?php if(!empty($_SESSION['error']['repass'])) echo $_SESSION['error']['repass']?><br/>
                             <input type="password" name="repass">
                         </label><br>
-                        <label>Age<br/>
-                            <input type="number" name="age">
+                        <label>Age<span class="error"><?php if(!empty($_SESSION['error']['age'])) echo $_SESSION['error']['age']?></span><br/>
+                            <input type="tel" name="age" value="<?php if(!empty($_SESSION['age'])) echo $_SESSION['age']?>">
                         </label><br>
-                        <label>Twitter<br/>
-                            <input type="text" name="acount" value="@">
+                        <label>Type<span class="error"><?php if(!empty($_SESSION['error']['type'])) echo $_SESSION['error']['type']?></span><br/>
+                            <input type="radio" name="type" value="engineer" <?php if($_SESSION['type'] == 'engineer') echo 'checked'?>>エンジニア
+                            <input type="radio" name="type" value="designer" <?php if($_SESSION['type'] == 'designer') echo 'checked'?>>デザイナー
                         </label><br>
-                        <label>Type<br/>
-                            <input type="radio" name="type" value="engineer">エンジニア
-                            <input type="radio" name="type" value="designer">デザイナー
+                        <label>Skill<span class="error"><?php if(!empty($_SESSION['error']['skill'])) echo $_SESSION['error']['skill']?></span><br/>
+                        <textarea name="skill" cols=50 rows=5><?php if(!empty($_SESSION['skill'])) echo $_SESSION['skill']?></textarea>
                         </label><br>
-                        <label>Skill<br/>
-                            <textarea name="skill" cols=50 rows=5></textarea>
-                        </label><br>
-                        <label>Profile<br/>
-                            <textarea name="profile" cols=50 rows=5></textarea>
+                        <label>Profile<span class="error"><?php if(!empty($_SESSION['error']['profile'])) echo $_SESSION['error']['profile']?></span><br/>
+                            <textarea name="profile" cols=50 rows=5><?php if(!empty($_SESSION['profile'])) echo $_SESSION['profile']?></textarea>
                         </label><br>
                     <input type="submit" value="SEND">
                 </form>
