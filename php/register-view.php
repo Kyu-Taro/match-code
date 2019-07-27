@@ -46,9 +46,9 @@
 
         //パスワードのバリデーションチェック
         if(empty($err_msg)){
-            passCheck($pass,$repass,'repass');
-            passCheckNumber($repass,'repass');
             passCheckNumber($pass,'pass');
+            harfCheck($pass,'pass');
+            passCheck($pass,$repass,'repass');
         }
 
         //メールアドレスがすでに登録されているものがないか
@@ -108,7 +108,7 @@
                         <label>Email<?php if(!empty($err_msg['email'])) echo "<br/>"?><span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email']?> </span><br/>
                             <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email']?>">
                         </label><br>
-                        <label>Password<?php if(!empty($err_msg['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['repass']?></span><br/>
+                        <label>Password<?php if(!empty($err_msg['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass']?></span><br/>
                             <input type="password" name="pass">
                         </label><br>
                         <label>Retype password<?php if(!empty($err_msg['repass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['repass'])) echo $err_msg['repass']?><br/>
