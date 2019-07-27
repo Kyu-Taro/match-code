@@ -35,7 +35,7 @@ require('function.php');
                             <input type="text" name="name" value="<?php if(!empty($_SESSION['name'])) echo $_SESSION['name']?>">
                         </label><br>
                         <label>Email<br/>
-                            <input type="text" name="email" value="<?php if(empty(!$_SESSION['email'])) echo $_SESSION['email']?>">
+                            <input type="text" name="email" value="<?php if(!empty(!$_SESSION['email'])) echo $_SESSION['email']?>">
                         </label><br>
                         <label>Password<?php if(!empty($_SESSION['error']['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($_SESSION['error']['pass'])) echo $_SESSION['error']['pass']?></span><br/>
                             <input type="password" name="pass">

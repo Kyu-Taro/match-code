@@ -1,11 +1,10 @@
 <?php
 //sessionの開始と有効期限の変更
-session_start();
-// session_save_path("c/:xampp/php/tmp");
-session_save_path("/var/tmp");
-ini_set('session.gc_maxlifetime',60*60*23*30);
+session_save_path("c:/xampp/php/tmp");
+// session_save_path("/var/tmp");
+ini_set('session.gc_maxlifetime',60*60*24*30);
 ini_set('session.cookie_lifetime',60*60*24*30);
-
+session_start();
 //エラーログをとる設定
 ini_set('log_errors','on');
 ini_set('error_log','php.log');
