@@ -96,7 +96,7 @@ function harfCheck($str, $key){
     }
 }
 
-// DBのEmailと一致するものがあるかチェック
+// DBのEmailと重複してないかチェック
 function matchEmail($str, $ley){
-
+    getDb();
 }
