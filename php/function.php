@@ -95,5 +95,3 @@ function harfCheck($str, $key){
     $err_msg[$key] = ERROR7;
     }
 }
-
-b
