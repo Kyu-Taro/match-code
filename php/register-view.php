@@ -55,20 +55,32 @@
         if(empty($err_msg)){
             try{
                 $db=getDb();
-                $sql='SELECT * FROM users WHERE email = :email';
+                $sql='SELECT count(*) FROM users WHERE email = :email && delete_flg = 0';
                 $data=[':email'=>$email];
                 $item=queryPost($sql,$data,$db);
-                if($item){
+                $result=$item->fetch(PDO::FETCH_ASSOC);
+                debug(print_r($result,true));
+                if(!empty(array_shift($result))){
                     $err_msg['email']=ERROR6;
                 }
             }catch(Exception $e){
-                
+                debug('エラー:'.$e->getMessage());
             }
         }
 
         //全てのバリデーションが終わり画面遷移の操作
         if(empty($err_msg)){
-            header('Location:myPage-view.php');
+            try{
+                $db=getDb();
+                $sql='INSERT INTO users(name,email,pass,age,type_id,skill,prof) VALUES(:name,:email,:pass,:age,:type_id,:skill,:prof)';
+                $data=[':name'=>$name,':email'=>$email,':pass'=>password_hash($pass,PASSWORD_DEFAULT),':age'=>$age,':type_id'=>$type,':skill'=>$skill,':prof'=>$profile];
+                $result=queryPost($sql,$data,$db);
+                if($result){
+                    header('Location:myPage-view.php');
+                }
+            }catch(Exception $e){
+                debug('エラー:'.$e->getMessage());
+            }
         }
     }
 ?>
@@ -93,7 +105,7 @@
                         <label>Name<span class="error"><?php if(!empty($err_msg['name'])) echo $err_msg['name']?> </span><br/>
                             <input type="text" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']?>">
                         </label><br>
-                        <label>Email<span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email']?> </span><br/>
+                        <label>Email<?php if(!empty($err_msg['email'])) echo "<br/>"?><span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email']?> </span><br/>
                             <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email']?>">
                         </label><br>
                         <label>Password<?php if(!empty($err_msg['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['repass']?></span><br/>
@@ -106,8 +118,8 @@
                             <input type="tel" name="age" value="<?php if(!empty($_POST['age'])) echo $_POST['age']?>">
                         </label><br>
                         <label>Type<span class="error"><?php if(!empty($err_msg['type'])) echo $err_msg['type']?></span><br/>
-                            <input type="radio" name="type" value="engineer" <?php if(!empty($_POST['type']) && $_POST['type'] == 'engineer') echo 'checked'?>>エンジニア
-                            <input type="radio" name="type" value="designer" <?php if(!empty($_POST['type']) && $_POST['type'] == 'designer') echo 'checked'?>>デザイナー
+                            <input type="radio" name="type" value="1" <?php if(!empty($_POST['type']) && $_POST['type'] == '1') echo 'checked'?>>エンジニア
+                            <input type="radio" name="type" value="2" <?php if(!empty($_POST['type']) && $_POST['type'] == '2') echo 'checked'?>>デザイナー
                         </label><br>
                         <label>Skill<span class="error"><?php if(!empty($err_msg['skill'])) echo $err_msg['skill']?></span><br/>
                         <textarea name="skill" cols=50 rows=5><?php if(!empty($_POST['skill'])) echo $_POST['skill']?></textarea>
