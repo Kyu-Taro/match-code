@@ -1,11 +1,11 @@
 <?php
 //ヘッダーとフッターに使うリンク
-    $url1="register-view.php";
+    $url1="index.php";
     $url2="login-view.php";
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
-    $link1="Regist";
+    $link1="Top";
     $link2="Login";
     $link3="Post";
     $link4="Team";
@@ -24,48 +24,45 @@
 </head>
 <body>
     <?php include('header.php'); ?>
-    <main id="register">
-        <section class="top-container">
-            <div class="form-container ">
-                <form class="top-coment">
-                    <h1>Regist</h1>
-                    <label>Name
-                        <input type="text" name="name">
-                    </label><br>
-                    <label>Email
-                        <input type="text" name="mail">
-                    </label><br>
-                    <label>Password
-                        <input type="password" name="pass">
-                    </label><br>
-                    <label>Retype password
-                        <input type="password" name="repass">
-                    </label><br>
-                    <label>Age
-                        <input type="bumber" name="age">
-                    </label><br>
-                    <label>Twitter
-                        <input type="checkbox" name="twitter">
-                    </label><br>
-                    <label>
-                        <input type="checkbox" name="type[]" value="engineer">エンジニア
-                        <input type="checkbox" name="type[]" value="designer">デザイナー
-                    </label><br>
-                    <label>Skill
-                        <textarea name="skill" cols=50 rows=5></textarea>
-                    </label><br>
-                    <label>Intoroduction
-                        <textarea name="intoro" cols=50 rows=5></textarea>
-                    </label><br>
+    <main class="top-container">
+        <section class="form-container">
+            <div class="site-width">
+            <h1>Member registration</h1>
+                <form>
+                        <label>Name<br/>
+                            <input type="text" name="name">
+                        </label><br>
+                        <label>Email<br/>
+                            <input type="text" name="email">
+                        </label><br>
+                        <label>Password<br/>
+                            <input type="password" name="pass">
+                        </label><br>
+                        <label>Retype password<br/>
+                            <input type="password" name="repass">
+                        </label><br>
+                        <label>Age<br/>
+                            <input type="number" name="age">
+                        </label><br>
+                        <label>Twitter<br/>
+                            <input type="text" name="acount" value="@">
+                        </label><br>
+                        <label>Type<br/>
+                            <input type="radio" name="type" value="engineer">エンジニア
+                            <input type="radio" name="type" value="designer">デザイナー
+                        </label><br>
+                        <label>Skill<br/>
+                            <textarea name="skill" cols=50 rows=5></textarea>
+                        </label><br>
+                        <label>Profile<br/>
+                            <textarea name="profile" cols=50 rows=5></textarea>
+                        </label><br>
                     <input type="submit" value="SEND">
                 </form>
-
                 <p>アカウントをお持ちの方は<a href="login-view.php">こちら</a></p>
             </div>
         </section>
-    </main>
-    
-        
+    </main>        
     <?php include('footer.php')?>
     <script src="../js/index.js"></script>
 </body>
