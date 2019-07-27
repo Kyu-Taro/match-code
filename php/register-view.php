@@ -1,5 +1,6 @@
 <?php
 require('function.php');
+session_destroy();
 
 //ヘッダーとフッターに使うリンク
     $url1="index.php";
@@ -35,7 +36,7 @@ require('function.php');
                             <input type="text" name="name" value="<?php if(!empty($_SESSION['name'])) echo $_SESSION['name']?>">
                         </label><br>
                         <label>Email<br/>
-                            <input type="text" name="email" value="<?php if(!empty(!$_SESSION['email'])) echo $_SESSION['email']?>">
+                            <input type="text" name="email" value="<?php if(!empty($_SESSION['email'])) echo $_SESSION['email']?>">
                         </label><br>
                         <label>Password<?php if(!empty($_SESSION['error']['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($_SESSION['error']['pass'])) echo $_SESSION['error']['pass']?></span><br/>
                             <input type="password" name="pass">
@@ -47,8 +48,8 @@ require('function.php');
                             <input type="tel" name="age" value="<?php if(!empty($_SESSION['age'])) echo $_SESSION['age']?>">
                         </label><br>
                         <label>Type<span class="error"><?php if(!empty($_SESSION['error']['type'])) echo $_SESSION['error']['type']?></span><br/>
-                            <input type="radio" name="type" value="engineer" <?php if($_SESSION['type'] == 'engineer') echo 'checked'?>>エンジニア
-                            <input type="radio" name="type" value="designer" <?php if($_SESSION['type'] == 'designer') echo 'checked'?>>デザイナー
+                            <input type="radio" name="type" value="engineer" <?php if(!empty($_SESSION['type']) && $_SESSION['type'] == 'engineer') echo 'checked'?>>エンジニア
+                            <input type="radio" name="type" value="designer" <?php if(!empty($_SESSION['type']) && $_SESSION['type'] == 'designer') echo 'checked'?>>デザイナー
                         </label><br>
                         <label>Skill<span class="error"><?php if(!empty($_SESSION['error']['skill'])) echo $_SESSION['error']['skill']?></span><br/>
                         <textarea name="skill" cols=50 rows=5><?php if(!empty($_SESSION['skill'])) echo $_SESSION['skill']?></textarea>

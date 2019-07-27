@@ -138,3 +138,57 @@ Stack trace:
 [27-Jul-2019 20:08:10 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
 [27-Jul-2019 20:08:10 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
 [27-Jul-2019 20:09:07 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-logic.php on line 10
+[27-Jul-2019 20:28:41 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:28:41 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:28:41 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:28:41 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:28:52 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:28:52 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:28:52 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:28:52 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:29:11 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:11 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:11 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:29:11 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:29:29 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:29 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:29 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:29:29 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:29:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:43 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:29:43 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:29:58 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:58 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:29:58 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:29:58 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:30:13 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:30:13 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 38
+[27-Jul-2019 20:30:13 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 50
+[27-Jul-2019 20:30:13 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:32:24 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function session_destoy() in C:\xampp\htdocs\match-code\php\register-view.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\match-code\php\register-view.php on line 3
+[27-Jul-2019 20:32:25 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Call to undefined function session_destoy() in C:\xampp\htdocs\match-code\php\register-view.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\match-code\php\register-view.php on line 3
+[27-Jul-2019 20:33:00 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:00 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:00 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:33:00 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 52
+[27-Jul-2019 20:33:24 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:24 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:24 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:33:24 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 52
+[27-Jul-2019 20:33:33 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:33 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:33:33 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 51
+[27-Jul-2019 20:33:33 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 52
+[27-Jul-2019 20:36:07 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:36:07 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:36:07 Asia/Tokyo] PHP Notice:  Undefined index: type in C:\xampp\htdocs\match-code\php\register-view.php on line 52
+[27-Jul-2019 20:36:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:36:43 Asia/Tokyo] PHP Notice:  Undefined index: email in C:\xampp\htdocs\match-code\php\register-view.php on line 39
+[27-Jul-2019 20:37:21 Asia/Tokyo] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in C:\xampp\htdocs\match-code\php\register-view.php on line 3
