@@ -1,6 +1,5 @@
 <?php
     require_once('function.php');
-    debug('てすと');
     
     //ヘッダーとフッターに使うリンク
     $url1="index.php";
