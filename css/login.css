@@ -133,10 +133,6 @@ form{
     margin: auto;
     width: 50%;
 }
-p{
-    width: 50%;
-    margin: auto;
-}
 h1{
     margin-bottom: 40px;
     text-align: center;
@@ -170,6 +166,6 @@ a{
     text-decoration: none;
     color: orange;
 }
-span.error{
+span.error, p.error{
     color: red;
 }
