@@ -1,7 +1,8 @@
 <?php
     require_once('function.php');
+    debug('てすと');
     
-//ヘッダーとフッターに使うリンク
+    //ヘッダーとフッターに使うリンク
     $url1="index.php";
     $url2="register-view.php";
     $url3="post-view.php";
@@ -14,14 +15,14 @@
     $link5="Detail";
 
     if(!empty($_POST)){
-        // error_log('POST送信があります');
-        // error_log('POSTの中身'.print_r($_POST[],true));
-
+        debug('POST送信があります');
+        error_log('POSTの中身'.print_r($_POST,true));
         $email = $_POST['email'];
-        $pass = $_POST['passwoed'];
+        $pass = $_POST['pass'];
         //入力チェック
         emptyCheck($email, 'email');
         emptyCheck($pass, 'pass');
+        error_log('errの中身'.print_r($err_msg,true));
         if(empty($err_msg)){
             error_log('入力チェックOKです');
 
@@ -37,7 +38,7 @@
                 //DBからパスワードを持ってくる
                 try{
                     $dbh = getDb();
-                    $sql = 'SELECT pass FROM users WHERE email = :email AND delete_flg = 0';
+                    $sql = 'SELECT pass, id FROM users WHERE email = :email AND delete_flg = 0';
                     $data = [':email' => $email];
                     $item = queryPost($sql, $data, $dbh);
                     $result = $item->fetch(PDO::FETCH_ASSOC);
@@ -45,10 +46,20 @@
                     if($result && password_verify($pass, array_shift($result))){
                         error_log('パスワードが一致しました');
                         //セッションにidとlogin_timeとlogin_limitを入れる
+                        $_SESSION['user_id'] = $result['id'];
+                        $_SESSION['login_time'] = time();
+                        //ログイン保持にチェックがあれば30日、なければ１時間
+                        if(!empty($_POST['login'])){
+                            $_SESSION['login_limit'] = 60*60*24*30;
+                        }else{
+                            $_SESSION['login_limit'] = 60*60;
+                        }
+                        err_log('sessionの中身'.print_r($_SESSION, true));
                         header('Location:myPage-view.php');
+                        exit();
                     }else{
                         debug('パスワードが合いません');
-                        $err_msg['error'] = 'EmailもしくはPasswordが合いません';                        
+                        $err_msg['error'] = 'EmailまたはPasswordが合いません';                        
                     }
 
                 }catch (Exception $e){
@@ -68,7 +79,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/login.css" type="text/css">
-    <title>Match-Code</title>
+    <title>Match-Code|ログイン</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
@@ -77,14 +88,15 @@
         <section class="form-container">
             <div class="site-width">
                 <h1>Login</h1>
-                <form>
-                    <label>Email<br/>
-                        <input type="text" name="email">
+                <form action="" method="POST">
+                   <p class="error"><?php if(!empty($err_msg['error'])) echo $err_msg['error'] ?></p>
+                    <label>Email<span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email'] ?></span><br/>
+                        <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email'] ?>">
                     </label><br>
-                    <label>Password<br/>
-                        <input type="password" name="pass">
+                    <label>Password<span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass'] ?></span><br/>
+                        <input type="password" name="pass" value="<?php if(!empty($_POST['pass'])) echo $_POST['pass'] ?>">
                     </label><br>
-                    <input type="checkbox" value="login">ログイン状態を保持する<br/>
+                    <input type="checkbox" name="login" <?php if(!empty($_POST['login'])) echo 'checked' ?>>ログイン状態を保持する<br/>
                     <input type="submit" value="SEND">
                 </form>
             </div>
