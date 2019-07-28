@@ -54,14 +54,12 @@
                         }else{
                             $_SESSION['login_limit'] = 60*60;
                         }
-                        err_log('sessionの中身'.print_r($_SESSION, true));
                         header('Location:myPage-view.php');
                         exit();
                     }else{
                         debug('パスワードが合いません');
                         $err_msg['error'] = 'EmailまたはPasswordが合いません';                        
                     }
-
                 }catch (Exception $e){
                     debug($e->getMessage());
                     $err_msg['error'] = 'エラーが発生しました';
