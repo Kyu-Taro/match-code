@@ -198,3 +198,40 @@ Stack trace:
 [27-Jul-2019 11:51:55 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
 [27-Jul-2019 11:52:00 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
 [27-Jul-2019 11:54:04 UTC] PHP Notice:  Undefined index: type in /Applications/MAMP/htdocs/match-code/php/register-view.php on line 23
+[28-Jul-2019 02:45:27 UTC] デバッグ:てすと
+[28-Jul-2019 02:45:51 UTC] デバッグ:てすと
+[28-Jul-2019 02:45:51 UTC] デバッグ:POST送信があります
+[28-Jul-2019 02:45:51 UTC] POSTの中身Array
+(
+    [email] => amiti9999@icloud.com
+    [pass] => 9999
+)
+
+[28-Jul-2019 02:45:51 UTC] errの中身Array
+(
+)
+
+[28-Jul-2019 02:45:51 UTC] 入力チェックOKです
+[28-Jul-2019 02:45:51 UTC] 形式チェックOKです
+[28-Jul-2019 02:45:51 UTC] パスワードが一致しました
+[28-Jul-2019 02:45:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function err_log() in /Applications/MAMP/htdocs/match-code/php/login-view.php:57
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/login-view.php on line 57
+[28-Jul-2019 02:46:11 UTC] デバッグ:てすと
+[28-Jul-2019 02:46:17 UTC] デバッグ:てすと
+[28-Jul-2019 02:46:17 UTC] デバッグ:POST送信があります
+[28-Jul-2019 02:46:17 UTC] POSTの中身Array
+(
+    [email] => amiti9999@icloud.com
+    [pass] => 9999
+)
+
+[28-Jul-2019 02:46:17 UTC] errの中身Array
+(
+)
+
+[28-Jul-2019 02:46:17 UTC] 入力チェックOKです
+[28-Jul-2019 02:46:17 UTC] 形式チェックOKです
+[28-Jul-2019 02:46:17 UTC] パスワードが一致しました
+[28-Jul-2019 02:46:17 UTC] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/match-code/php/myPage-view.php on line 26
