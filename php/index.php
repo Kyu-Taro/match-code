@@ -5,11 +5,13 @@
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
+    $url6="myPage-view.php";
     $link1="Regist";
     $link2="Login";
     $link3="Post";
     $link4="Team";
     $link5="Detail";
+    $link6="Mypage";
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +32,7 @@
             First time team development
         </h1>
         <p class="top-coment">
-            駆け出しプログラニング・デザイナーのためのサービス<br/>
+            駆け出しプログラマー・デザイナーのためのサービス<br/>
             一人ではできないチーム開発を<span class="top-span">Match-code</span>なら<br/>
             初めてのチーム開発をここで
         </p>

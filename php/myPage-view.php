@@ -5,11 +5,13 @@
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
+    $url6="setting.php";
     $link1="Logout";
     $link2="Create";
     $link3="Post";
     $link4="Team";
     $link5="Detail";
+    $link6="Setting";
 
     require('function.php');
     $id=$_SESSION['user_id'];
