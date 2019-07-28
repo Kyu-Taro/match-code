@@ -24,7 +24,7 @@
         $result=queryPost($sql,$data,$db);
         $items=$result->fetch(PDO::FETCH_ASSOC);
     }catch(Exception $e){
-        debut('ユーザー情報所得エラー:'.$e->getMessage());
+        debug('ユーザー情報所得エラー:'.$e->getMessage());
     }
 ?>
 <!DOCTYPE html>
