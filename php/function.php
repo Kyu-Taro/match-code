@@ -104,3 +104,18 @@ function getSession($key){
         return $data;
     }
 }
+
+function auth(){
+    //ログイン判定
+    if (!empty($_SESSION['login_time'])) {
+        if (time() > $_SESSION['login_time'] + $_SESSION['login_limit']) {
+            debug('ログイン有効機嫌が過ぎています');
+            header('Location:login-view.php');
+        } else {
+            debug('ログイン有効期限内です');
+        }
+    } else {
+        debug('ログインしていません');
+        header('Location:login-view.php');
+    }
+}
