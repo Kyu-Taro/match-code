@@ -7,6 +7,7 @@
             <li><a href="<?php echo $url3?>"><?php echo $link3?></a></li>
             <li><a href="<?php echo $url4?>"><?php echo $link4?></a></li>
             <li><a href="<?php echo $url5?>"><?php echo $link5?></a></li>
+            <li><a href="<?php echo $url6?>"><?php echo $link6?></a></li>
         </ul>
     </nav>
 </header>

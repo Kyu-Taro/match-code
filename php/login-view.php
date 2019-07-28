@@ -7,11 +7,13 @@
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
+    $url6="myPage-view.php";
     $link1="Top";
     $link2="Regist";
     $link3="Post";
     $link4="Team";
     $link5="Detail";
+    $link6="Mypage";
 
     if(!empty($_POST)){
         debug('POST送信があります');
