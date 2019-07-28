@@ -34,5 +34,10 @@ $(function(){
         $('.form-container').fadeIn(1000);
     },500);
 
+    //マイページのアニメーション
+    setTimeout(function(){
+        $('.myPage-container').slideDown(1600);
+    },400);
+
 
 });

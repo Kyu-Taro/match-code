@@ -1,0 +1,128 @@
+body,ul,h1,p{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/* 
+======================
+       サイトの幅
+======================
+ */
+.site-width{
+    width: 980px;
+    margin: auto;
+}
+
+/* 
+======================
+      headerのCSS
+======================
+*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 95px;
+}
+h1.logo{
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 4px;
+    line-height: 95px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact';
+    font-size: 45px;
+}
+.header-nav{
+    float: right;
+}
+.header-nav ul li{
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+}
+header ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
+ }
+
+/* 
+ ============================
+        マイページのCSS
+=============================
+ */
+ .myPage-section{
+     height: 1000px;
+     background-image: url('../img/myPage-top.jpg');
+     background-size: cover;
+ }
+ .myPage-container{
+     height: 1000px;
+     background: #00000094;
+     display: none;
+ }
