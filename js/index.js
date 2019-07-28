@@ -44,5 +44,13 @@ $(function(){
         $('.create-container').slideDown(1600);
     },400);
 
+    //サクセスメッセージ表示
+    var $msg_suc = $('.msg-suc');
+    var msg = $msg_suc.text();
+    if(msg.replace(/^[\s　]+|[\s　]+$/g, "").length){
+        $msg_suc.slideToggle('slow');
+        setTimeout(function(){ $msg_suc.slideToggle('slow'); }, 4000);
+    }
+
 
 });

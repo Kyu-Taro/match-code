@@ -1,4 +1,7 @@
 <?php
+require_once('function.php');
+//サクセスメッセージ
+$_SESSION['msg-suc'] = 'ログアウトしました';
 //ヘッダーとフッターに使うリンク
     $url1="register-view.php";
     $url2="login-view.php";
@@ -27,6 +30,7 @@
 <body>
     <?php include('header.php'); ?>
     <section class="top-container">
+        <h1 class="msg-suc"><?php if(!empty($_SESSION['msg-suc'])) echo getSession('msg-suc') ?></h1>
         <h1 class="top-title">
             ~Match-Code~<br/>
             First time team development
