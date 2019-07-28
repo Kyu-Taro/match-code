@@ -39,7 +39,27 @@
         }
 
         if(empty($err_msg)){
-            
+            try{
+                //投稿内容をtextsテーブルとteamsテーブルに登録
+                $db=getDb();
+                $sql='INSERT INTO texts(title,user_id,text,number) VALUES(:title,:user_id,:text,:number)';
+                $data=[':title'=>$title,':user_id'=>$id,':text'=>$textContent,':number'=>$number];
+                $result=queryPost($sql,$data,$db);
+                if($result){
+                    debug('textsテーブルに登録完了');
+                }
+
+                $sql='INSERT INTO teams(user_id,name,text) VALUES(:user_id,:name,:text)';
+                $data=[':user_id'=>$id,':name'=>$name,':text'=>$teamContent];
+                $result=queryPost($sql,$data,$db);
+                if($result){
+                    debug('teamsテーブルに登録完了');
+                }
+
+                header('Location:myPage-view.php');
+            }catch(Exception $e){
+                debug('エラー:'.$e->getMessage());
+            }
         }
     }
 

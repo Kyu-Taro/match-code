@@ -235,3 +235,5 @@ Stack trace:
 [28-Jul-2019 02:46:17 UTC] 形式チェックOKです
 [28-Jul-2019 02:46:17 UTC] パスワードが一致しました
 [28-Jul-2019 02:46:17 UTC] PHP Warning:  Use of undefined constant s - assumed 's' (this will throw an Error in a future version of PHP) in /Applications/MAMP/htdocs/match-code/php/myPage-view.php on line 26
+[28-Jul-2019 09:32:29 UTC] デバッグ:textsテーブルに登録完了
+[28-Jul-2019 09:32:29 UTC] デバッグ:teamsテーブルに登録完了
