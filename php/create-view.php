@@ -1,6 +1,9 @@
 <?php
     require('function.php');
 
+    //ログインしてるかをチェック
+    auth();
+
     //ヘッダーとフッターのリンク
     $url1="Logout.php";
     $url2="create-view.php";
