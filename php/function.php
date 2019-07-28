@@ -1,7 +1,7 @@
 <?php
 //sessionの開始と有効期限の変更
-// session_save_path("c:/xampp/php/tmp");
-session_save_path("/var/tmp");
+session_save_path("c:/xampp/php/tmp");
+// session_save_path("/var/tmp");
 ini_set('session.gc_maxlifetime',60*60*24*30);
 ini_set('session.cookie_lifetime',60*60*24*30);
 session_start();
@@ -93,5 +93,14 @@ function harfCheck($str, $key){
     if(!preg_match("/^[a-zA-Z0-9]+$/", $str)){
     global $err_msg;
     $err_msg[$key] = ERROR7;
+    }
+}
+
+//セッションを１回だけ取り削除
+function getSession($key){
+    if(!empty($_SESSION[$key])){
+        $data = $_SESSION[$key];
+        $_SESSION[$key] = "";
+        return $data;
     }
 }
