@@ -1,4 +1,4 @@
-body,ul,h1,p{
+body,ul,h1,p,h2{
     margin: 0;
     padding: 0;
 }
@@ -117,12 +117,90 @@ header ul li a:hover{
 =============================
  */
  .myPage-section{
-     height: 1000px;
+     height: 1300px;
      background-image: url('../img/myPage-top.jpg');
      background-size: cover;
+     color: white;
  }
  .myPage-container{
-     height: 1000px;
+     height: 1300px;
      background: #00000094;
      display: none;
  }
+ h1.mypage-title{
+     padding-top: 150px;
+     text-align: center;
+     font-size: 45px;
+     color: orange;
+ }
+ .my-prof{
+     margin: auto;
+ }
+ .my-prof dt{
+     float: left;
+     margin-right: 15px;
+     width:100px;
+ }
+ .my-prof dd{
+     margin-bottom: 10px;
+ }
+ .text-contents{
+     overflow: hidden;
+     margin-bottom: 50px;
+     max-height: 400px;
+     min-height: 400px;
+ }
+ .text-content h2,p{
+     display: inline-block;
+ }
+ .text-content{
+     width: 25%;
+     float: left;
+     border: solid white 2px;
+     margin-right: 20px;
+     box-sizing: border-box;
+     padding: 20px 30px;
+     min-height: 270px;
+     max-height: 270px;
+ }
+ .text-content h2{
+     font-size: 15px;
+     margin-bottom: 10px;
+     color: orange;
+ }
+ .text-contents h1{
+    border-bottom: white 3px solid;
+    margin-bottom: 50px;
+ }
+ .team-contents{
+    overflow: hidden;
+    max-height: 400px;
+    min-height: 400px
+}
+.team-content h2,p{
+    display: inline-block;
+}
+.team-content{
+    width: 25%;
+    float: left;
+    border: solid white 2px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    min-height: 270px;
+    max-height: 270px;
+}
+.team-content h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: orange;
+}
+.team-contents h1{
+    border-bottom: white 3px solid;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
+ 
