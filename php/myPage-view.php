@@ -25,7 +25,7 @@
         $items=$result->fetch(PDO::FETCH_ASSOC);
     }catch(Exception $e){
         debut('ユーザー情報所得エラー:'.$e->getMessage());
-    }s
+    }
 ?>
 <!DOCTYPE html>
 <html lang="ja">

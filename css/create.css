@@ -112,45 +112,38 @@ header ul li a:hover{
  }
 
 /* 
-======================
-        フォーム
-======================
+ ============================
+        投稿ページのCSS
+=============================
  */
- .top-container{
-    height: 800px;
-    background-image: url(../img/top-img.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    font-size: 23px;
-}
-.form-container{
-    padding: 150px 0 300px 0;
-    color: white;
-    background: #00000094;
-    display: none;
-}
-form{
+ .create-section{
+     color: white;
+     height: 1100px;
+     background-image: url('../img/myPage-top.jpg');
+     background-size: cover;
+ }
+ .create-container{
+     height: 1100px;
+     background: #00000094;
+     display: none;
+ }
+ h1.create-title{
+     text-align: center;
+     padding-top: 150px;
+     font-size: 45px;
+     color: orange;
+     margin-bottom: 40px;
+ }
+ form{
     margin: auto;
     width: 50%;
 }
-h1{
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 45px;
-    color: orange;
-}
-input[type="text"],textarea,input[type="password"],input[type="number"]{
+input[type="text"],textarea,input[type="password"],input[type="tel"]{
     margin-top: 10px;
     margin-bottom: 20px;
     width: 80%;
     padding: 10px 0;
-}
-input[type="radio"]{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-form label{
-    margin-top: 20px;
+    font-size: 15px;
 }
 input[type="submit"]{
     padding: 10px 15px;
@@ -161,11 +154,14 @@ input[type="submit"]{
     font-size: 15px;
     margin-bottom: 20px;
     cursor: pointer;
+    margin-top: 15px;
 }
-a{
-    text-decoration: none;
-    color: orange;
+form label{
+    margin-top: 20px;
+    font-size: 23px;
 }
-span.error, p.error{
+span.error{
     color: red;
 }
+
+

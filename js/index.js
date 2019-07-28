@@ -39,5 +39,10 @@ $(function(){
         $('.myPage-container').slideDown(1600);
     },400);
 
+    //投稿ページのアニメーション
+    setTimeout(function(){
+        $('.create-container').slideDown(1600);
+    },400);
+
 
 });
