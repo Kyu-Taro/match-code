@@ -1,4 +1,7 @@
 <?php
+    require('function.php');
+    auth();
+    
     //ヘッダーとフッターのリンク
     $url1="Logout.php";
     $url2="create-view.php";
@@ -13,7 +16,6 @@
     $link5="Detail";
     $link6="Setting";
 
-    require('function.php');
     $id=$_SESSION['user_id'];
 
     //ユーザー情報の所得
