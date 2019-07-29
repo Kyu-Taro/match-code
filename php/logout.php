@@ -10,3 +10,4 @@ if(isset($_COOKIE[session_name()])){
 //セッション破壊
 session_destroy();
 header('Location:index.php');
+$_SESSION['msg-suc'] = 'ログアウトしました';
