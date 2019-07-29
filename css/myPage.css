@@ -117,13 +117,13 @@ header ul li a:hover{
 =============================
  */
  .myPage-section{
-     height: 1300px;
+     height: 1400px;
      background-image: url('../img/myPage-top.jpg');
      background-size: cover;
      color: white;
  }
  .myPage-container{
-     height: 1300px;
+     height: 1400px;
      background: #00000094;
      display: none;
  }
@@ -135,6 +135,10 @@ header ul li a:hover{
  }
  .my-prof{
      margin: auto;
+ }
+ dl{
+     display: inline-block;
+     width: 70%;
  }
  .my-prof dt{
      float: left;
@@ -154,14 +158,21 @@ header ul li a:hover{
      display: inline-block;
  }
  .text-content{
-     width: 25%;
+     width: 22%;
+     overflow: hidden;
      float: left;
      border: solid white 2px;
+     border-radius: 5px;
      margin-right: 20px;
      box-sizing: border-box;
      padding: 20px 30px;
      min-height: 270px;
      max-height: 270px;
+     background: rgba(0, 0, 0, 0.356);
+ }
+ .text-content p{
+    overflow: hidden;
+    text-overflow: ellipsis;
  }
  .text-content h2{
      font-size: 15px;
@@ -174,14 +185,14 @@ header ul li a:hover{
  }
  .team-contents{
     overflow: hidden;
-    max-height: 400px;
+    max-height: 500px;
     min-height: 400px
 }
 .team-content h2,p{
     display: inline-block;
 }
 .team-content{
-    width: 25%;
+    width: 22%;
     float: left;
     border: solid white 2px;
     margin-right: 20px;
@@ -189,6 +200,9 @@ header ul li a:hover{
     padding: 20px 30px;
     min-height: 270px;
     max-height: 270px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.356);
+    border-radius: 5px;
 }
 .team-content h2{
     font-size: 15px;
@@ -199,8 +213,17 @@ header ul li a:hover{
     border-bottom: white 3px solid;
     margin-bottom: 50px;
 }
+.team-content p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
 a{
     text-decoration: none;
     color: orange;
+}
+.prof-img{
+    width: 20%;
+    height: 200px;
+    margin-right: 80px;
 }
  
