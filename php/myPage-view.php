@@ -66,6 +66,8 @@
                         <dd><?php echo $users['name']?></dd>
                         <dt>Age</dt>
                         <dd><?php echo $users['age']?></dd>
+                        <dt>Type</dt>
+                        <dd><?php echo ($users['type_id'] == 1) ? 'エンジニア' : 'デザイナー'?></dd>
                         <dt>Skill</dt>
                         <dd><?php echo $users['skill']?></dd>
                         <dt>Profile</dt>

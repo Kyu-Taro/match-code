@@ -120,3 +120,8 @@ function auth(){
         header('Location:login-view.php');
     }
 }
+
+//サニタイズ
+function sani($str){
+    return htmlspecialchars($str);
+}
