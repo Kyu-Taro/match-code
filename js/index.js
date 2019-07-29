@@ -48,7 +48,7 @@ $(function(){
     setTimeout(function(){
         $('.setting-container').slideDown(1600);
     },400);
-    
+
     //サクセスメッセージ表示
     var $msg_suc = $('.msg-suc');
     var msg = $msg_suc.text();
@@ -57,5 +57,29 @@ $(function(){
         setTimeout(function(){ $msg_suc.slideToggle('slow'); }, 4000);
     }
 
+    //画像ビュー
+    var $dropArea=$('.area-drop');
+    var $fileInput=$('.input-file');
+    $dropArea.on('dragover',function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).css('border','3px #ccc dashed');
+    });
 
+    $dropArea.on('dragleave',function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $(this).css('border','none');
+    });
+
+    $fileInput.on('change',function(e){
+        $dropArea.css('border','none');
+        var file=this.files[0];
+        $img=$(this).siblings('.prev-img');
+        fileReader=new FileReader();
+        fileReader.onload=function(event){
+            $img.attr('src',event.target.result).show();
+        };
+        fileReader.readAsDataURL(file);
+    })
 });
