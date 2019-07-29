@@ -112,6 +112,7 @@ function auth(){
             debug('ログイン有効機嫌が過ぎています');
             header('Location:login-view.php');
         } else {
+            $_SESSION['login_time']=time();
             debug('ログイン有効期限内です');
         }
     } else {

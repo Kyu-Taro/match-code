@@ -60,6 +60,7 @@
             <div class="site-width">
                 <h1 class="mypage-title">Profile</h1>
                 <div class="my-prof">
+                    <img class="prof-img" src="../img/<?php echo (!empty($users['imgs'])) ? $users['img'] :  'sample.jpg'?>">
                     <dl>
                         <dt>Name</dt>
                         <dd><?php echo $users['name']?></dd>
