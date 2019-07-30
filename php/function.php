@@ -1,7 +1,7 @@
 <?php
 //sessionの開始と有効期限の変更
-session_save_path("c:/xampp/php/tmp");
-//session_save_path("/var/tmp");
+// session_save_path("c:/xampp/php/tmp");
+session_save_path("/var/tmp");
 ini_set('session.gc_maxlifetime',60*60*24*30);
 ini_set('session.cookie_lifetime',60*60*24*30);
 session_start();
@@ -34,8 +34,8 @@ function debug($str){
 //DBの接続
 function getDb(){
     $db="mysql:dbname=match_code; host=localhost; charset=utf8";
-    $user="webukatu";
-    $pass="webukatu";
+    $user="root";
+    $pass="root";
     $option=[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
     $dbh=new PDO($db,$user,$pass,$option);
     return $dbh;
@@ -130,9 +130,9 @@ function sani($str){
 function uploadImg($file,$key){
     debug('画像アップロード処理開始');
     debug('FILE情報：'.print_r($file, true));
-    if(isset($file['error']) && is_int($file['error'])){
-        try{
-            switch($file['error']){
+    if (isset($file['error']) && is_int($file['error'])) {
+        try {
+            switch ($file['error']) {
                 case UPLOAD_ERR_OK:
                     break;
                 case UPLOAD_ERR_NO_FILE:
@@ -144,23 +144,25 @@ function uploadImg($file,$key){
                     throw new RuntimeException('その他のエラーが発生しました');
             }
             $type=@exif_imagetype($file['tmp_name']);
-            if(!in_array($type,[IMAGETYPE_GIF,IMAGETYPE_JPEG,IMAGETYPE_PNG],true)){
+            if (!in_array($type, [IMAGETYPE_GIF,IMAGETYPE_JPEG,IMAGETYPE_PNG], true)) {
                 throw new RuntimeException('画像形式が違います');
             }
             $path='../img/uploads/'.sha1_file($file['tmp_name']).image_type_to_extension($type);
-            if(!move_uploaded_file($file['tmp_name'],$path)){
+            if (!move_uploaded_file($file['tmp_name'], $path)) {
                 throw new EuntimeException('ファイル保存時にエラーが出ました');
             }
-            chmod($path,0644);
+            chmod($path, 0644);
             debug('ファイルは正常にアップロードされました');
             debug('ファイルパス：'.$path);
             return $path;
-        }catch(RuntimException $e){
+        } catch (RuntimeException $e) {
             global $err_msg;
             $err_msg[$key]=$e->getMessage();
             debug('エラー:'.$e->getMessage());
-        }catch(EuntimeException $e){
+        } catch (EuntimeException $e) {
             debug('エラー:'.$e->getMessage());
         }
+    }else{
+        debug('エラーです');
     }
 }
