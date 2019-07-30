@@ -1,7 +1,7 @@
 <?php
 //sessionの開始と有効期限の変更
-// session_save_path("c:/xampp/php/tmp");
-session_save_path("/var/tmp");
+session_save_path("c:/xampp/php/tmp");
+//session_save_path("/var/tmp");
 ini_set('session.gc_maxlifetime',60*60*24*30);
 ini_set('session.cookie_lifetime',60*60*24*30);
 session_start();
@@ -34,8 +34,8 @@ function debug($str){
 //DBの接続
 function getDb(){
     $db="mysql:dbname=match_code; host=localhost; charset=utf8";
-    $user="root";
-    $pass="root";
+    $user="webukatu";
+    $pass="webukatu";
     $option=[PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION];
     $dbh=new PDO($db,$user,$pass,$option);
     return $dbh;
@@ -128,6 +128,8 @@ function sani($str){
 
 //画像のアップロード処理とバリデーション
 function uploadImg($file,$key){
+    debug('画像アップロード処理開始');
+    debug('FILE情報：'.print_r($file, true));
     if(isset($file['error']) && is_int($file['error'])){
         try{
             switch($file['error']){
@@ -149,7 +151,9 @@ function uploadImg($file,$key){
             if(!move_uploaded_file($file['tmp_name'],$path)){
                 throw new EuntimeException('ファイル保存時にエラーが出ました');
             }
-            chomod($path,0644);
+            chmod($path,0644);
+            debug('ファイルは正常にアップロードされました');
+            debug('ファイルパス：'.$path);
             return $path;
         }catch(RuntimException $e){
             global $err_msg;
