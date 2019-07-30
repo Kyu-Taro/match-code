@@ -128,15 +128,13 @@ function sani($str){
 
 //画像のアップロード処理とバリデーション
 function uploadImg($file,$key){
-    debug('画像アップロード処理開始');
-    debug('FILE情報：'.print_r($file, true));
     if (isset($file['error']) && is_int($file['error'])) {
         try {
             switch ($file['error']) {
                 case UPLOAD_ERR_OK:
                     break;
                 case UPLOAD_ERR_NO_FILE:
-                    throw new RuntimeException('ファイルが選択されていません');
+                    return 'no-file';
                 case UPLOAD_ERR_INI_SIZE:
                 case UPLOAD_ERR_FORM_SIZE:
                     throw new RuntimeException('ファイルサイズが大き過ぎます');
@@ -152,8 +150,6 @@ function uploadImg($file,$key){
                 throw new EuntimeException('ファイル保存時にエラーが出ました');
             }
             chmod($path, 0644);
-            debug('ファイルは正常にアップロードされました');
-            debug('ファイルパス：'.$path);
             return $path;
         } catch (RuntimeException $e) {
             global $err_msg;

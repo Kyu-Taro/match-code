@@ -119,13 +119,13 @@ header ul li a:hover{
 =========================
  */
  .setting-containers{
-    height: 1200px;
+    height: 1300px;
     background-image: url('../img/myPage-top.jpg');
     background-size: cover;
     color: white;
  }
  .setting-container{
-    height: 1200px;
+    height: 1300px;
     background: #00000094;
     display: none;
  }
@@ -195,7 +195,7 @@ input[type="file"]{
     position: absolute;
     top: 180px;
     left: 0;
-    height: 200px;
+    height: 212px;
     width: 200px;
     z-index: 3;
 }
@@ -209,4 +209,7 @@ div.area-drop{
     font-weight: bold;
     margin: 18px 0;
     border-radius: 2px;
+}
+span.delete{
+    margin-left: 550px;
 }
