@@ -125,3 +125,38 @@ function auth(){
 function sani($str){
     return htmlspecialchars($str);
 }
+
+//画像のアップロード処理とバリデーション
+function uploadImg($file,$key){
+    if(isset($file['error']) && is_int($file['error'])){
+        try{
+            switch($file['error']){
+                case UPLOAD_ERR_OK:
+                    break;
+                case UPLOAD_ERR_NO_FILE:
+                    throw new RuntimeException('ファイルが選択されていません');
+                case UPLOAD_ERR_INI_SIZE:
+                case UPLOAD_ERR_FORM_SIZE:
+                    throw new RuntimeException('ファイルサイズが大き過ぎます');
+                default:
+                    throw new RuntimeException('その他のエラーが発生しました');
+            }
+            $type=@exif_imagetype($file['tmp_name']);
+            if(!in_array($type,[IMAGETYPE_GIF,IMAGETYPE_JPEG,IMAGETYPE_PNG],true)){
+                throw new RuntimeException('画像形式が違います');
+            }
+            $path='../img/uploads/'.sha1_file($file['tmp_name']).image_type_to_extension($type);
+            if(!move_uploaded_file($file['tmp_name'],$path)){
+                throw new EuntimeException('ファイル保存時にエラーが出ました');
+            }
+            chomod($path,0644);
+            return $path;
+        }catch(RuntimException $e){
+            global $err_msg;
+            $err_msg[$key]=$e->getMessage();
+            debug('エラー:'.$e->getMessage());
+        }catch(EuntimeException $e){
+            debug('エラー:'.$e->getMessage());
+        }
+    }
+}
