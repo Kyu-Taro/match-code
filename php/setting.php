@@ -35,7 +35,7 @@
         $type=$_POST['type'];
         $skill=$_POST['skill'];
         $prof=$_POST['prof'];
-        $img=$_POST['file'];
+        $img=$_FILES['file'];
 
         emptyCheck($name,'name');
         emptyCheck($email,'email');
@@ -60,7 +60,6 @@
                 $data=[':name'=>$name,':email'=>$email,'age'=>$age,':type'=>$type,':skill'=>$skill,':prof'=>$prof,':img'=>$path,':id'=>$id];
                 $result=queryPost($sql,$data,$db);
                 if($result){
-                    debug('更新完了しました');
                     $_SESSION['msg-suc']='プロフィールを更新しました';
                     header('Location:myPage-view.php');
                 }
@@ -85,7 +84,7 @@
     <section class="setting-containers">
         <div class="setting-container">
             <div class="site-width">
-                <form action="setting.php" method="POST">
+                <form action="setting.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']?>">
                     <label>プロフィール画像<span class="error"></span><br/>
                     <div class="area-drop">
