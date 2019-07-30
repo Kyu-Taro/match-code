@@ -28,7 +28,46 @@
     }
 
     if(!empty($_POST)){
+        $id=$_POST['id'];
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $age=$_POST['age'];
+        $type=$_POST['type'];
+        $skill=$_POST['skill'];
+        $prof=$_POST['prof'];
+        $img=$_POST['file'];
 
+        emptyCheck($name,'name');
+        emptyCheck($email,'email');
+        emptyCheck($age,'age');
+        emptyCheck($type,'type');
+        emptyCheck($skill,'skill');
+        emptyCheck($prof,'prof');
+
+        if(empty($err_msg)){
+            emailCheck($email,'email');
+            ageCheck($age,'age');
+        }
+
+        if(empty($err_msg)){
+            $path=uploadImg($img,'file');
+        }
+
+        if(empty($err_msg)){
+            try{
+                $db=getDb();
+                $sql='UPDATE users SET name = :name,email = :email,age = :age,type_id = :type,skill = :skill,prof = :prof,img = :img WHERE id = :id';
+                $data=[':name'=>$name,':email'=>$email,'age'=>$age,':type'=>$type,':skill'=>$skill,':prof'=>$prof,':img'=>$path,':id'=>$id];
+                $result=queryPost($sql,$data,$db);
+                if($result){
+                    debug('更新完了しました');
+                    $_SESSION['msg-suc']='プロフィールを更新しました';
+                    header('Location:myPage-view.php');
+                }
+            }catch(Exception $e){
+                debug('更新時にエラーが発生しました'.$e->getMessage());
+            }
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -47,6 +86,7 @@
         <div class="setting-container">
             <div class="site-width">
                 <form action="setting.php" method="POST">
+                    <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']?>">
                     <label>プロフィール画像<span class="error"></span><br/>
                     <div class="area-drop">
                         ドラッグ&ドロップ
@@ -55,7 +95,7 @@
                     </div>
                     </label>
                     <label>名前:<span class="error"></span><br/>
-                        <input type="text" name="text" value="<?php echo sani($users['name'])?>"><br/>
+                        <input type="text" name="name" value="<?php echo sani($users['name'])?>"><br/>
                     </label>
                     <label>メールアドレス:<span class="error"></span><br/>
                         <input type="text" name="email" value="<?php echo sani($users['email'])?>"><br/>
