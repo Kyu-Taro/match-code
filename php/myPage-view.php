@@ -56,6 +56,7 @@
 <body>
     <?php include('header.php')?>
     <section class="myPage-section">
+    <h1 class="msg-suc"><?php if(!empty($_SESSION['msg-suc'])) echo getSession('msg-suc') ?></h1>
         <div class="myPage-container">
             <div class="site-width">
                 <h1 class="mypage-title">Profile</h1>

@@ -51,6 +51,9 @@
 
         if(empty($err_msg)){
             $path=uploadImg($img,'file');
+            if($path == 'no-file'){
+                $path =$users['img'];
+            }
         }
 
         if(empty($err_msg)){
@@ -80,6 +83,7 @@
     <title>Match-Code|設定</title>
 </head>
 <body>
+
     <?php include('header.php')?>
     <section class="setting-containers">
         <div class="setting-container">
@@ -89,7 +93,7 @@
                     <label>プロフィール画像<span class="error"></span><br/>
                     <div class="area-drop">
                         ドラッグ&ドロップ
-                        <img src="" class="prev-img" style="display: none">
+                        <img src="<?php if(!empty($users['img'])) echo $users['img']?>" class="prev-img" style="<?php (!empty($users['img'])) ? 'display:block' : 'display: none'?>">
                         <input type="file" name="file" class="input-file"><br/>
                     </div>
                     </label>
@@ -114,6 +118,7 @@
                     </label>
                     <input type="submit" value="SEND">
                 </form>
+                <span class="delete">退会は<a href="delete-view.php">こちら</a></span>
             </div>
         </div>
     </section>
