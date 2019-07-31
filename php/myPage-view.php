@@ -79,7 +79,7 @@
                     <h1>Posts</h1>
                     <?php foreach($texts as $text){?>
                         <div class="text-content">
-                            <a href="text-detai.php?id=<?php echo $text['id']?>"><h2><?php echo $text['title']?></h2></a><br/>
+                            <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo $text['title']?></h2></a><br/>
                             <p>募集人数:<?php echo $text['number']?>名</p><br/>
                             <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo $users['name']?></a></p><br/>
                             <p>チーム名:<a href="team-detail.php?id=<?php echo $text['id']?>"><?php echo $text['name']?></a></p>
@@ -91,7 +91,7 @@
                     <h1>Teams</h1>
                     <?php foreach($teams as $team){?>
                         <div class="team-content">
-                            <a href="team-detail.php?id=<?php echo $team['id']?>"><h2><?php echo $team['name']?></h2></a><br/>
+                            <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo $team['name']?></h2></a><br/>
                             <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo $users['name']?></a></p><br/>
                             <p>活動内容:<br/><?php echo $team['text']?></p><br/>
                         </div>

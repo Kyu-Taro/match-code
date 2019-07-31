@@ -55,9 +55,15 @@
                 $sql='INSERT INTO teams(user_id,name,text) VALUES(:user_id,:name,:text)';
                 $data=[':user_id'=>$id,':name'=>$name,':text'=>$teamContent];
                 $result=queryPost($sql,$data,$db);
+                $team_id=$db->lastInsertId();
                 if($result){
                     debug('teamsテーブルに登録完了');
                 }
+
+                $sql='INSERT INTO affiliation(team_id) VALUES(:team_id)';
+                $data=[':team_id'=>$team_id];
+                $result=queryPost($sql,$data,$db);
+                debug('affliationテーブルに登録完了');
 
                 header('Location:myPage-view.php');
             }catch(Exception $e){
