@@ -86,17 +86,17 @@
     <main class="top-container">
         <section class="form-container">
             <div class="site-width">
-                <h1>Login</h1>
+                <h1>ログイン</h1>
                 <form action="" method="POST">
                    <p class="error"><?php if(!empty($err_msg['error'])) echo $err_msg['error'] ?></p>
-                    <label>Email<span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email'] ?></span><br/>
+                    <label>メール<span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email'] ?></span><br/>
                         <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email'] ?>">
                     </label><br>
-                    <label>Password<span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass'] ?></span><br/>
+                    <label>パスワード<span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass'] ?></span><br/>
                         <input type="password" name="pass" value="<?php if(!empty($_POST['pass'])) echo $_POST['pass'] ?>">
                     </label><br>
                     <input type="checkbox" name="login" <?php if(!empty($_POST['login'])) echo 'checked' ?>>ログイン状態を保持する<br/>
-                    <input type="submit" value="SEND">
+                    <input type="submit" value="送信">
                 </form>
             </div>
         </section>

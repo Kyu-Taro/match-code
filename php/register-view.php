@@ -102,31 +102,31 @@
     <main class="top-container">
         <section class="form-container">
             <div class="site-width">
-            <h1>Member registration</h1>
+            <h1>会員登録</h1>
                 <form action="register-view.php" method="POST">
-                        <label>Name<span class="error"><?php if(!empty($err_msg['name'])) echo $err_msg['name']?> </span><br/>
+                        <label>名前<span class="error"><?php if(!empty($err_msg['name'])) echo $err_msg['name']?> </span><br/>
                             <input type="text" name="name" value="<?php if(!empty($_POST['name'])) echo $_POST['name']?>">
                         </label><br>
-                        <label>Email<?php if(!empty($err_msg['email'])) echo "<br/>"?><span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email']?> </span><br/>
+                        <label>メール<?php if(!empty($err_msg['email'])) echo "<br/>"?><span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email']?> </span><br/>
                             <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email']?>">
                         </label><br>
-                        <label>Password<?php if(!empty($err_msg['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass']?></span><br/>
+                        <label>パスワード<?php if(!empty($err_msg['pass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass']?></span><br/>
                             <input type="password" name="pass">
                         </label><br>
-                        <label>Retype password<?php if(!empty($err_msg['repass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['repass'])) echo $err_msg['repass']?><br/>
+                        <label>パスワード再入力<?php if(!empty($err_msg['repass']))  echo "<br/>"?><span class="error"><?php if(!empty($err_msg['repass'])) echo $err_msg['repass']?><br/>
                             <input type="password" name="repass">
                         </label><br>
-                        <label>Age<span class="error"><?php if(!empty($err_msg['age'])) echo $err_msg['age']?></span><br/>
+                        <label>年齢<span class="error"><?php if(!empty($err_msg['age'])) echo $err_msg['age']?></span><br/>
                             <input type="tel" name="age" value="<?php if(!empty($_POST['age'])) echo $_POST['age']?>">
                         </label><br>
-                        <label>Type<span class="error"><?php if(!empty($err_msg['type'])) echo $err_msg['type']?></span><br/>
+                        <label>職種<span class="error"><?php if(!empty($err_msg['type'])) echo $err_msg['type']?></span><br/>
                             <input type="radio" name="type" value="1" <?php if(!empty($_POST['type']) && $_POST['type'] == '1') echo 'checked'?>>エンジニア
                             <input type="radio" name="type" value="2" <?php if(!empty($_POST['type']) && $_POST['type'] == '2') echo 'checked'?>>デザイナー
                         </label><br>
-                        <label>Skill<span class="error"><?php if(!empty($err_msg['skill'])) echo $err_msg['skill']?></span><br/>
+                        <label>スキル<span class="error"><?php if(!empty($err_msg['skill'])) echo $err_msg['skill']?></span><br/>
                         <textarea name="skill" cols=50 rows=5><?php if(!empty($_POST['skill'])) echo $_POST['skill']?></textarea>
                         </label><br>
-                        <label>Profile<span class="error"><?php if(!empty($err_msg['profile'])) echo $err_msg['profile']?></span><br/>
+                        <label>プロフィール<span class="error"><?php if(!empty($err_msg['profile'])) echo $err_msg['profile']?></span><br/>
                             <textarea name="profile" cols=50 rows=5><?php if(!empty($_POST['profile'])) echo $_POST['profile']?></textarea>
                         </label><br>
                     <input type="submit" value="SEND">
