@@ -119,7 +119,7 @@
                         <label>年齢<span class="error"><?php if(!empty($err_msg['age'])) echo $err_msg['age']?></span><br/>
                             <input type="tel" name="age" value="<?php if(!empty($_POST['age'])) echo $_POST['age']?>">
                         </label><br>
-                        <label>職種<span class="error"><?php if(!empty($err_msg['type'])) echo $err_msg['type']?></span><br/>
+                        <label>種別<span class="error"><?php if(!empty($err_msg['type'])) echo $err_msg['type']?></span><br/>
                             <input type="radio" name="type" value="1" <?php if(!empty($_POST['type']) && $_POST['type'] == '1') echo 'checked'?>>エンジニア
                             <input type="radio" name="type" value="2" <?php if(!empty($_POST['type']) && $_POST['type'] == '2') echo 'checked'?>>デザイナー
                         </label><br>

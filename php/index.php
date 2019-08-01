@@ -1,7 +1,5 @@
 <?php
 require_once('function.php');
-//サクセスメッセージ
-$_SESSION['msg-suc'] = 'ログアウトしました';
 //ヘッダーとフッターに使うリンク
     $url1="register-view.php";
     $url2="login-view.php";
