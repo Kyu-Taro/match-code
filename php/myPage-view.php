@@ -59,24 +59,24 @@
     <h1 class="msg-suc"><?php if(!empty($_SESSION['msg-suc'])) echo getSession('msg-suc') ?></h1>
         <div class="myPage-container">
             <div class="site-width">
-                <h1 class="mypage-title">Profile</h1>
+                <h1 class="mypage-title">プロフィール</h1>
                 <div class="my-prof">
                     <img class="prof-img" src="<?php echo (!empty($users['img'])) ? $users['img'] :  '../img/sample.jpg'?>">
                     <dl>
-                        <dt>Name</dt>
+                        <dt>名前</dt>
                         <dd><?php echo $users['name']?></dd>
-                        <dt>Age</dt>
+                        <dt>年齢</dt>
                         <dd><?php echo $users['age']?></dd>
-                        <dt>Type</dt>
+                        <dt>種別</dt>
                         <dd><?php echo ($users['type_id'] == 1) ? 'エンジニア' : 'デザイナー'?></dd>
-                        <dt>Skill</dt>
+                        <dt>スキル</dt>
                         <dd><?php echo $users['skill']?></dd>
-                        <dt>Profile</dt>
+                        <dt>プロフィール</dt>
                         <dd><?php echo $users['prof']?></dd>
                     </dl>
                 </div>
                 <div class="text-contents">
-                    <h1>Posts</h1>
+                    <h1>投稿一覧</h1>
                     <?php foreach($texts as $text){?>
                         <div class="text-content">
                             <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo $text['title']?></h2></a><br/>
@@ -88,7 +88,7 @@
                     <?php }?>
                 </div>
                 <div class="team-contents">
-                    <h1>Teams</h1>
+                    <h1>所属チーム</h1>
                     <?php foreach($teams as $team){?>
                         <div class="team-content">
                             <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo $team['name']?></h2></a><br/>
