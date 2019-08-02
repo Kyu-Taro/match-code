@@ -109,14 +109,14 @@ header ul li a:hover{
      padding-top: 40px;
      letter-spacing: 2px;
      font-size: 13px;
-     color:rgb(0, 255, 213)
  }
- 
+
 /* 
 ======================
         フォーム
 ======================
- */
+  */
+
  .js-delete{
      background: rgba(0, 0, 0, 0.92);
  }
@@ -149,6 +149,41 @@ h1{
     text-align: center;
     font-size: 45px;
     color: orange;
+=======
+     width: 100%;
+ }
+
+ /* 
+ ============================
+         デリートのCSS
+=============================
+ */
+ .delete-section{
+    height: 800px;
+    background-image: url('../img/myPage-top.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.delete-container{
+    height: 800px;
+    background: #00000094;
+    display: none;
+}
+h1.delete-title{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 45px;
+    color: orange;
+    margin-bottom: 40px;
+}
+form{
+   margin: auto;
+   width: 50%;
+}
+p{
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 input[type="submit"]{
     padding: 10px 15px;
