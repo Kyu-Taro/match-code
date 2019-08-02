@@ -114,37 +114,35 @@ header ul li a:hover{
 
  /* 
  ============================
-        アップデートのCSS
+         デリートのCSS
 =============================
  */
- .update-section{
-    height: 820px;
+ .delete-section{
+    height: 800px;
     background-image: url('../img/myPage-top.jpg');
     background-size: cover;
     color: white;
+    text-align: center;
 }
-.update-container{
-    height: 820px;
+.delete-container{
+    height: 800px;
     background: #00000094;
     display: none;
 }
-h1.update-title{
+h1.delete-title{
     text-align: center;
-    padding-top: 150px;
+    padding-top: 200px;
     font-size: 45px;
     color: orange;
     margin-bottom: 40px;
 }
 form{
    margin: auto;
-   width: 40%;
+   width: 50%;
 }
-input[type="text"],textarea,input[type="password"],input[type="tel"]{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 15px;
+p{
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 input[type="submit"]{
     padding: 10px 15px;
@@ -153,10 +151,6 @@ input[type="submit"]{
     color: white;
     font-weight: bold;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin: 15px 10px 20px 0;
     cursor: pointer;
-    margin-top: 15px;
-}
-span.error{
-    color: red;
 }
