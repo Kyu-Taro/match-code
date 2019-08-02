@@ -144,12 +144,11 @@ form{
 .form-container p{
     text-align: center; 
   }
-h1{
+h1.del-title{
     margin-bottom: 100px;
     text-align: center;
     font-size: 45px;
     color: orange;
-=======
      width: 100%;
  }
 
