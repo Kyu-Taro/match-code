@@ -1,0 +1,156 @@
+body,ul,h1,p{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/* 
+======================
+       サイトの幅
+======================
+ */
+.site-width{
+    width: 980px;
+    margin: auto;
+}
+
+/* 
+======================
+      headerのCSS
+======================
+*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 95px;
+}
+h1.logo{
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 4px;
+    line-height: 95px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact';
+    font-size: 45px;
+}
+.header-nav{
+    float: right;
+}
+.header-nav ul li{
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+}
+header ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
+ }
+
+/* 
+======================
+        フォーム
+======================
+ */
+ .top-container{
+    height: 800px;
+    background-image: url(../img/top-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 23px;
+}
+.form-container,.withdraw{
+    padding: 150px 0 300px 0;
+    color: white;
+    background: #020202bf;
+    display: none;
+    height: 500px;
+}
+form{
+    margin: auto;
+    width: 50%;
+}
+h1{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 45px;
+    color: orange;
+}
+input[type="submit"]{
+    padding: 10px 15px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+span.error, p.error{
+    color: red;
+}
