@@ -57,11 +57,11 @@
             <div class="site-width">
                 <div class="detail">
                     <h1><?php echo sani($items['title'])?></h1>
-                        投稿者:<?php echo sani($items['name'])?><br/>
-                        募集人数:<?php echo sani($items['number'])?><br/>
-                        現在の人数:<?php echo sani($aff['number'])?>人<br/>
-                        チーム名:<a href="teamDetail-view.php?id=<?php echo $text_id?>"><?php echo sani($teams['name'])?></a><br/>
-                        内容:</td><td><?php echo sani($items['text'])?><br/>
+                        <p>【投稿者】<?php echo sani($items['name'])?></p><br/>
+                        <p>【募集人数】<?php echo sani($items['number'])?></p><br/>
+                        <p>【現在の人数】<?php echo sani($aff['number'])?>人</p><br/>
+                        <p>【チーム名】<a href="teamDetail-view.php?id=<?php echo $text_id?>"><?php echo sani($teams['name'])?></a></p><br/>
+                        <p>【内容】</td><td><?php echo sani($items['text'])?></p><br/>
                     <form action="entory.php">
                         <input type="submit" value="参加申請">
                     </form>

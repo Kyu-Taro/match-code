@@ -60,8 +60,8 @@
                     debug('teamsテーブルに登録完了');
                 }
 
-                $sql='INSERT INTO affiliation(team_id) VALUES(:team_id)';
-                $data=[':team_id'=>$team_id];
+                $sql='INSERT INTO affiliation(team_id,user_id) VALUES(:team_id,:user_id)';
+                $data=[':team_id'=>$team_id,':user_id'=>$id];
                 $result=queryPost($sql,$data,$db);
                 debug('affliationテーブルに登録完了');
 
