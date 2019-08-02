@@ -37,7 +37,7 @@
         $result=queryPost($sql,$data,$db);
         $texts=$result->fetchAll();
 
-        $sql='SELECT * FROM teams WHERE user_id = :id';
+        $sql='SELECT * FROM teams WHERE user_id = :id AND delete_flg = 0';
         $data=[':id'=>$id];
         $result=queryPost($sql,$data,$db);
         $teams=$result->fetchAll();
