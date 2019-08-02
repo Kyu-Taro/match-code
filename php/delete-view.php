@@ -188,7 +188,7 @@ function createDiv(height, width) {
     <div class="js-delete">
         <section class="form-container">            
             <div class="site-width">
-                <h1>本当に退会しますか？</h1>
+                <h1 class="del-title">本当に退会しますか？</h1>
                 <p class="error"><?php if(!empty($err_msg['error'])) echo $err_msg['error'] ?></p>
                 <p>退会すると、すべてのアカウント情報が削除されます。</p>
                 <p>本当に退会してもよろしいでしょうか。</p>
