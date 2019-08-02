@@ -131,7 +131,7 @@ header ul li a:hover{
 }
 form{
     margin: auto;
-    width: 50%;
+    width: 40%;
 }
 h1{
     margin-bottom: 40px;
@@ -142,7 +142,7 @@ h1{
 input[type="text"],textarea,input[type="password"],input[type="number"]{
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
     padding: 10px 0;
 }
 input[type="radio"]{

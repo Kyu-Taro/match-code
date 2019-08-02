@@ -1,4 +1,4 @@
-body,ul,h1,p,h2{
+body,ul,h1,p{
     margin: 0;
     padding: 0;
 }
@@ -109,6 +109,47 @@ header ul li a:hover{
      padding-top: 40px;
      letter-spacing: 2px;
      font-size: 13px;
+ }
+
+/* 
+======================
+        フォーム
+======================
+  */
+
+ .js-delete{
+     background: rgba(0, 0, 0, 0.92);
+ }
+ .top-container{
+    height: 800px;
+    background-image: url(../img/top-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 23px;
+}
+.form-container{
+    padding: 150px 0 300px 0;
+    color: red;
+    display: none;
+    height: 500px;
+}
+form{
+    margin: auto;
+    margin-top:50px; 
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.form-container p{
+    text-align: center; 
+  }
+h1{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: orange;
+=======
      width: 100%;
  }
 
@@ -151,6 +192,11 @@ input[type="submit"]{
     color: white;
     font-weight: bold;
     font-size: 15px;
-    margin: 15px 10px 20px 0;
+    margin: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
+}
+
+span.error, p.error{
+    color: red;
 }
