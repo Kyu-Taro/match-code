@@ -72,7 +72,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/delete.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <title>Match-Code|投稿編集</title>
+    <title>Match-Code|チーム解散</title>
 </head>
 <body>
     <?php include('header.php')?>
@@ -80,8 +80,8 @@
         <div class="delete-container">
             <div class="site-width">
                 <h1 class="delete-title">チーム削除</h1>
-                    <p>【チーム名】<?php echo $teams['name']?></p>
-                    <p>【活動内容】<?php echo $teams['text']?></p>
+                    <p>【チーム名】<?php echo sani($teams['name'])?></p>
+                    <p>【活動内容】<?php echo sani($teams['text'])?></p>
                 <form action="delete-team.php" method="POST">
                     <input type="submit" name="delete" value="削除">
                     <input type="submit" name="delete" value="戻る">
