@@ -4,7 +4,8 @@
 
     $id=$_SESSION['user_id'];
     if (!empty($_GET['id'])) {
-        $team_id=$_GET['id'];
+        $_SESSION['id']=$_GET['id'];
+        debug('IDを所得しました');
     }
 
     //ヘッダーとフッターのリンク
@@ -25,7 +26,7 @@
     try{
         $db=getDb();
         $sql='SELECT * FROM teams WHERE id = :id';
-        $data=[':id'=>$team_id];
+        $data=[':id'=>$_SESSION['id']];
         $result=queryPost($sql,$data,$db);
         $teams=$result->fetch(PDO::FETCH_ASSOC);
     }catch(Exception $e){
@@ -51,11 +52,11 @@
         if(empty($err_msg)){
             try{
                 $db=getDb();
-                $sql='UPDATE teams SET name = :name AND text = :text WHERE id = :team_id';
-                $data=[':name'=>$name,':text'=>$text,':team_id'=>$team_id];
+                $sql='UPDATE teams SET name = :name,text = :text WHERE id = :team_id';
+                $data=[':name'=>$name,':text'=>$text,':team_id'=>$_SESSION['id']];
                 $result=queryPost($sql,$data,$db);
                 if($result){
-                    $_SESSION['msg_suc']='更新完了しました';
+                    $_SESSION['msg-suc']='更新完了しました';
                     header('Location:myPage-view.php');
                 }
             }catch(Exception $e){
