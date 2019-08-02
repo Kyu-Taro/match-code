@@ -1,4 +1,4 @@
-body,ul,h1,p,h2{
+body,ul,h1,p{
     margin: 0;
     padding: 0;
 }
@@ -109,42 +109,46 @@ header ul li a:hover{
      padding-top: 40px;
      letter-spacing: 2px;
      font-size: 13px;
-     width: 100%;
+     color:rgb(0, 255, 213)
  }
-
- /* 
- ============================
-        アップデートのCSS
-=============================
+ 
+/* 
+======================
+        フォーム
+======================
  */
-.update-section{
-    height: 1400px;
-    background-image: url('../img/myPage-top.jpg');
+ .js-delete{
+     background: rgba(0, 0, 0, 0.92);
+ }
+ .top-container{
+    height: 800px;
+    background-image: url(../img/top-img.jpg);
+    background-attachment: fixed;
     background-size: cover;
-    color: white;
+    font-size: 23px;
 }
-.update-container{
-    height: 1400px;
-    background: #00000094;
+.form-container{
+    padding: 150px 0 300px 0;
+    color: red;
     display: none;
-}
-h1.update-title{
-    text-align: center;
-    padding-top: 150px;
-    font-size: 45px;
-    color: orange;
-    margin-bottom: 40px;
+    height: 500px;
 }
 form{
-   margin: auto;
-   width: 40%;
+    margin: auto;
+    margin-top:50px; 
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-input[type="text"],textarea,input[type="password"],input[type="tel"]{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 10px 0;
-    font-size: 15px;
+.form-container p{
+    text-align: center; 
+  }
+h1{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: orange;
 }
 input[type="submit"]{
     padding: 10px 15px;
@@ -153,10 +157,11 @@ input[type="submit"]{
     color: white;
     font-weight: bold;
     font-size: 15px;
+    margin: 20px;
     margin-bottom: 20px;
     cursor: pointer;
-    margin-top: 15px;
 }
-span.error{
+
+span.error, p.error{
     color: red;
 }
