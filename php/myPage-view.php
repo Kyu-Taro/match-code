@@ -18,8 +18,10 @@
 
     if (!empty($_GET)) {
         $id=$_GET['user_id'];
+        $my_flg=false;
     }else{
         $id=$_SESSION['user_id'];
+        $my_flg=true;
     }
 
     //ユーザー情報の所得
@@ -83,7 +85,9 @@
                             <p>募集人数:<?php echo $text['number']?>名</p><br/>
                             <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo $users['name']?></a></p><br/>
                             <p>チーム名:<a href="team-detail.php?id=<?php echo $text['id']?>"><?php echo $text['name']?></a></p>
-                            <p>募集内容:<br/><?php echo $text['text']?></p><br/>
+                            <p class="max-height">募集内容:<br/><?php echo $text['text']?></p><br/>
+                            <?php if($my_flg) echo '<a class="delete-btn" href="detete-post.php?id='.$text['id'].'">削除</a>'?>
+                            <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
                         </div>
                     <?php }?>
                 </div>
@@ -93,7 +97,9 @@
                         <div class="team-content">
                             <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo $team['name']?></h2></a><br/>
                             <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo $users['name']?></a></p><br/>
-                            <p>活動内容:<br/><?php echo $team['text']?></p><br/>
+                            <p class="max-height">活動内容:<br/><?php echo $team['text']?></p><br/>
+                            <?php if($my_flg) echo '<a class="delete-btn" href="detete-team.php?id='.$team['id'].'">削除</a>'?>
+                            <?php if($my_flg) echo '<a class="update-btn" href="update-team.php?id='.$team['id'].'">編集</a>'?>
                         </div>
                     <?php } ?>
                 </div>
