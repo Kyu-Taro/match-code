@@ -74,7 +74,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/update.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <title>Match-Code|投稿編集</title>
+    <title>Match-Code|チーム情報</title>
 </head>
 <body>
     <?php include('header.php')?>
