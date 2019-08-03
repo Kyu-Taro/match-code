@@ -1,0 +1,177 @@
+body,ul,h1,p,h2{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/* 
+======================
+       サイトの幅
+======================
+ */
+.site-width{
+    width: 980px;
+    margin: auto;
+}
+
+/* 
+======================
+      headerのCSS
+======================
+*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 95px;
+}
+h1.logo{
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 4px;
+    line-height: 95px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact';
+    font-size: 45px;
+}
+.header-nav{
+    float: right;
+}
+.header-nav ul li{
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+}
+header ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/* 
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
+     width: 100%;
+ }
+
+ /* 
+ ============================
+        トップページのCSS
+=============================
+ */
+ .team-section{
+    height: 1400px;
+    background-image: url('../img/myPage-top.jpg');
+    background-size: cover;
+    color: white;
+}
+.team-container{
+    height: 1400px;
+    background: #00000094;
+    display: none;
+}
+.team-contents{
+    overflow: hidden;
+    margin-bottom: 50px;
+    max-height: 1200px;
+    min-height: 1200px;
+    overflow: auto;
+    padding-top: 150px;
+}
+.team-content h2,p{
+    display: inline-block;
+}
+.team-content{
+    width: 22%;
+    overflow: hidden;
+    float: left;
+    border: solid white 2px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    min-height: 300px;
+    max-height: 300px;
+    background: rgba(0, 0, 0, 0.356);
+    margin-bottom: 20px;
+    position: relative;
+}
+p.max-height{
+    max-height: 70px;
+    max-width: 151.59px;
+}
+.team-content p{
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.team-content h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: orange;
+}
+.team-contents h1{
+   border-bottom: white 3px solid;
+   margin-bottom: 50px;
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
