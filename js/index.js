@@ -64,6 +64,11 @@ $(function(){
         $('.delete-container').slideDown(1600);
     },400);
 
+    //アップデートページのアニメーション
+    setTimeout(function(){
+        $('.post-container').slideDown(1600);
+    },400);
+
     //サクセスメッセージ表示
     var $msg_suc = $('.msg-suc');
     var msg = $msg_suc.text();
