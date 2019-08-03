@@ -83,17 +83,18 @@
 </head>
 <body>
     <?php include('header.php'); ?>
+    <h1 class="msg-suc"><?php if(!empty($_SESSION['msg-suc'])) echo getSession('msg-suc') ?></h1>
     <main class="top-container">
         <section class="form-container">
             <div class="site-width">
                 <h1>ログイン</h1>
                 <form action="" method="POST">
                    <p class="error"><?php if(!empty($err_msg['error'])) echo $err_msg['error'] ?></p>
-                    <label>メール<span class="error"><?php if(!empty($err_msg['email'])) echo $err_msg['email'] ?></span><br/>
-                        <input type="text" name="email" value="<?php if(!empty($_POST['email'])) echo $_POST['email'] ?>">
+                    <label>メール<span class="error"><?php echo errMsg('email') ?></span><br/>
+                        <input type="text" name="email" value="<?php echo getPost('email') ?>">
                     </label><br>
-                    <label>パスワード<span class="error"><?php if(!empty($err_msg['pass'])) echo $err_msg['pass'] ?></span><br/>
-                        <input type="password" name="pass" value="<?php if(!empty($_POST['pass'])) echo $_POST['pass'] ?>">
+                    <label>パスワード<span class="error"><?php echo errMsg('pass') ?></span><br/>
+                        <input type="password" name="pass" value="<?php echo getPost('pass') ?>">
                     </label><br>
                     <input type="checkbox" name="login" <?php if(!empty($_POST['login'])) echo 'checked' ?>>ログイン状態を保持する<br/>
                     <input type="submit" value="送信">

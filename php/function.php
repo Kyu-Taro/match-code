@@ -162,3 +162,25 @@ function uploadImg($file,$key){
         debug('エラーです');
     }
 }
+
+//エラーメッセージ表示関数
+function errMsg($str){
+    global $err_msg;
+    if(!empty($err_msg[$str])){
+        return $err_msg[$str];
+    }
+}
+//エラーメッセージがあれば改行させる関数
+function errBr($str){
+    global $err_msg;
+    if(!empty($err_msg[$str])){
+        echo "<br>";
+    }
+}
+//入力保持関数 $_GETのときは第２引数にfalseを入れる
+function getPost($str, $post_flg = true){
+    $method = ($post_flg) ? $_POST : $_GET;
+    if(!empty($method[$str])){
+        return $method[$str];
+    }
+}

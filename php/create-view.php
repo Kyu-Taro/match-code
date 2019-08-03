@@ -89,7 +89,7 @@
     <section class="create-section">
         <div class="create-container">
             <div class="site-width">
-                <h1 class="create-title">Create new project</h1>
+                <h1 class="create-title">プロジェクト作成</h1>
                 <form action="create-view.php" method="POST">
                     <input type="hidden" name="id" value="<?php echo $id?>">
                     
