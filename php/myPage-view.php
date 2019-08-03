@@ -32,7 +32,7 @@
         $result=queryPost($sql,$data,$db);
         $users=$result->fetch(PDO::FETCH_ASSOC);
 
-        $sql='SELECT * FROM texts AS T JOIN teams AS C ON T.id = C.id WHERE T.user_id = :id AND T.delete_flg = 0';
+        $sql='SELECT T.id,T.title,T.number,T.text AS text_name,C.name FROM texts AS T JOIN teams AS C ON T.id = C.id WHERE T.user_id = :id AND T.delete_flg = 0';
         $data=[':id'=>$id];
         $result=queryPost($sql,$data,$db);
         $texts=$result->fetchAll();
@@ -84,8 +84,8 @@
                             <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
                             <p>募集人数:<?php echo $text['number']?>名</p><br/>
                             <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                            <p>チーム名:<a href="team-detail.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
-                            <p class="max-height">募集内容:<br/><?php echo $text['text']?></p><br/>
+                            <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
+                            <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
                             <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
                             <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
                         </div>

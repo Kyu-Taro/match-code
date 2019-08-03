@@ -15,24 +15,24 @@
     $link4="Team";
     $link5="Detail";
     $link6="Setting";
-    
+
     //ユーザー情報の所得
     try{
         $db=getDb();
-        $sql='SELECT * FROM users WHERE id = :id';
-        $data=[':id'=>$id];
-        $result=queryPost($sql,$data,$db);
-        $users=$result->fetch(PDO::FETCH_ASSOC);
+        // $sql='SELECT * FROM users WHERE delete_flg = 0';
+        // $data=[];
+        // $result=queryPost($sql,$data,$db);
+        // $users=$result->fetch(PDO::FETCH_ASSOC);
 
-        $sql='SELECT * FROM texts AS T JOIN teams AS C ON T.id = C.id WHERE T.user_id = :id AND T.delete_flg = 0';
-        $data=[':id'=>$id];
+        $sql='SELECT T.id,U.id AS user_id,T.title,T.number,U.name,C.name AS team_name,T.text FROM texts AS T JOIN teams AS C ON T.id = C.id JOIN users AS U ON T.user_id = U.id AND T.delete_flg = 0';
+        $data=[];
         $result=queryPost($sql,$data,$db);
         $texts=$result->fetchAll();
 
-        $sql='SELECT * FROM teams WHERE user_id = :id AND delete_flg = 0';
-        $data=[':id'=>$id];
-        $result=queryPost($sql,$data,$db);
-        $teams=$result->fetchAll();
+        // $sql='SELECT * FROM teams WHERE user_id = :id AND delete_flg = 0';
+        // $data=[':id'=>$id];
+        // $result=queryPost($sql,$data,$db);
+        // $teams=$result->fetchAll();
     }catch(Exception $e){
         debug('ユーザー情報所得エラー:'.$e->getMessage());
     }
@@ -59,11 +59,9 @@
                         <div class="text-content">
                             <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
                             <p>募集人数:<?php echo $text['number']?>名</p><br/>
-                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                            <p>チーム名:<a href="team-detail.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
+                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $text['user_id']?>"><?php echo sani($text['name'])?></a></p><br/>
+                            <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['team_name'])?></a></p>
                             <p class="max-height">募集内容:<br/><?php echo $text['text']?></p><br/>
-                            <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
-                            <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
                         </div>
                     <?php }?>
                 </div>

@@ -176,6 +176,7 @@ header ul li a:hover{
  }
  p.max-height{
      max-height: 70px;
+     max-width: 151.58px;
  }
  .text-content p{
     overflow: hidden;
