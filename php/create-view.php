@@ -6,13 +6,13 @@
 
     //ヘッダーとフッターのリンク
     $url1="Logout.php";
-    $url2="create-view.php";
+    $url2="myPage-view.php";
     $url3="post-view.php";
     $url4="team-view.php";
     $url5="../html/detail.html";
     $url6="setting.php";
     $link1="Logout";
-    $link2="Create";
+    $link2="Mypage";
     $link3="Post";
     $link4="Team";
     $link5="Detail";

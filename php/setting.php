@@ -1,7 +1,7 @@
 <?php
     require('function.php');
     auth();
-
+    
     //ヘッダーとフッターのリンク
     $url1="Logout.php";
     $url2="create-view.php";
@@ -90,31 +90,31 @@
             <div class="site-width">
                 <form action="setting.php" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $_SESSION['user_id']?>">
-                    <label>プロフィール画像<span class="error"></span><br/>
+                    <label>プロフィール画像<span class="error"><?php echo errMsg('file') ?></span><br/>
                     <div class="area-drop">
                         ドラッグ&ドロップ
                         <img src="<?php if(!empty($users['img'])) echo $users['img']?>" class="prev-img" style="<?php (!empty($users['img'])) ? 'display:block' : 'display: none'?>">
                         <input type="file" name="file" class="input-file"><br/>
                     </div>
                     </label>
-                    <label>名前:<span class="error"></span><br/>
-                        <input type="text" name="name" value="<?php echo sani($users['name'])?>"><br/>
+                    <label>名前:<span class="error"><?php echo errMsg('name') ?></span><br/>
+                        <input type="text" name="name" value="<?php echo getPost('name') ?>"><br/>
                     </label>
-                    <label>メールアドレス:<span class="error"></span><br/>
-                        <input type="text" name="email" value="<?php echo sani($users['email'])?>"><br/>
+                    <label>メールアドレス:<span class="error"><?php echo errMsg('email') ?></span><br/>
+                        <input type="text" name="email" value="<?php echo getPost('email') ?>"><br/>
                     </label>
-                    <label>年齢:<span class="error"></span><br/>
-                        <input type="tel" name="age" value="<?php echo sani($users['age'])?>"><br/>
+                    <label>年齢:<span class="error"><?php echo errMsg('age') ?></span><br/>
+                        <input type="tel" name="age" value="<?php  echo getPost('age') ?>"><br/>
                     </label>
-                    <label>種別:<span class="error"></span><br/>
+                    <label>種別:<span class="error"><?php echo errMsg('type') ?></span><br/>
                         <input type="radio" name="type" value="1" <?php if($users['type_id'] == '1') echo 'checked'?>>エンジニア
                         <input type="radio" name="type" value="2" <?php if($users['type_id'] == '2') echo 'checked'?>>デザイナー<br/>
                     </label>
-                    <label>スキル:<span class="error"></span><br/>
-                        <textarea cols="50" rows="5" name="skill"><?php echo sani($users['skill'])?></textarea><br/>
+                    <label>スキル:<span class="error"><?php echo errMsg('skill') ?></span><br/>
+                        <textarea cols="50" rows="5" name="skill"><?php echo getPost('skill') ?></textarea><br/>
                     </label>
-                    <label>自己紹介<span class="error"></span><br/>
-                        <textarea cols="50" rows="5" name="prof"><?php echo sani($users['prof'])?></textarea><br/>
+                    <label>自己紹介<span class="error"><?php echo errMsg('prof') ?></span><br/>
+                        <textarea cols="50" rows="5" name="prof"><?php echo getPost('prof') ?></textarea><br/>
                     </label>
                     <input type="submit" value="SEND">
                 </form>
