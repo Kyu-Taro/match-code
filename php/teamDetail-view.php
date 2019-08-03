@@ -70,7 +70,7 @@
                         </p>
                         <p>【募集投稿】<a href="postDetail-view.php?id=<?php echo $team_id?>"><?php echo sani($text['title'])?></a></p><br/>
                         <p>【活動内容】</td><td><?php echo sani($items['text'])?></p><br/>
-                    <form action="entory.php">
+                    <form action="entory.php?id=<?php echo $team_id?>" method="POST">
                         <input type="submit" value="参加申請">
                     </form>
                 </div>
