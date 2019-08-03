@@ -112,154 +112,61 @@ header ul li a:hover{
      width: 100%;
  }
 
-/* 
+ /* 
  ============================
         トップページのCSS
 =============================
  */
- .myPage-section{
-     height: 1400px;
-     background-image: url('../img/myPage-top.jpg');
-     background-size: cover;
-     color: white;
- }
- .myPage-container{
-     height: 1400px;
-     background: #00000094;
-     display: none;
- }
- h1.mypage-title{
-     padding-top: 150px;
-     text-align: center;
-     font-size: 45px;
-     color: orange;
- }
- .my-prof{
-     margin: auto;
- }
- dl{
-     display: inline-block;
-     width: 70%;
- }
- .my-prof dt{
-     float: left;
-     margin-right: 15px;
-     width:100px;
- }
- .my-prof dd{
-     margin-bottom: 10px;
- }
- .text-contents{
-     overflow: hidden;
-     margin-bottom: 50px;
-     max-height: 400px;
-     min-height: 400px;
-     overflow: auto;
- }
- .text-content h2,p{
-     display: inline-block;
- }
- .text-content{
-     width: 22%;
-     overflow: hidden;
-     float: left;
-     border: solid white 2px;
-     border-radius: 5px;
-     margin-right: 20px;
-     box-sizing: border-box;
-     padding: 20px 30px;
-     min-height: 300px;
-     max-height: 300px;
-     background: rgba(0, 0, 0, 0.356);
-     margin-bottom: 10px;
-     position: relative;
- }
- p.max-height{
-     max-height: 70px;
- }
- .text-content p{
+ .post-section{
+    height: 1400px;
+    background-image: url('../img/myPage-top.jpg');
+    background-size: cover;
+    color: white;
+}
+.post-container{
+    height: 1400px;
+    background: #00000094;
+    display: none;
+}
+.text-contents{
     overflow: hidden;
-    text-overflow: ellipsis;
- }
- .text-content h2{
-     font-size: 15px;
-     margin-bottom: 10px;
-     color: orange;
- }
- .text-contents h1{
-    border-bottom: white 3px solid;
     margin-bottom: 50px;
- }
- .team-contents{
-    overflow: hidden;
-    max-height: 500px;
+    max-height: 400px;
     min-height: 400px;
     overflow: auto;
+    padding-top: 150px;
 }
-.team-content h2,p{
+.text-content h2,p{
     display: inline-block;
 }
-.team-content{
+.text-content{
     width: 22%;
+    overflow: hidden;
     float: left;
     border: solid white 2px;
+    border-radius: 5px;
     margin-right: 20px;
     box-sizing: border-box;
     padding: 20px 30px;
     min-height: 300px;
     max-height: 300px;
-    overflow: hidden;
     background: rgba(0, 0, 0, 0.356);
-    border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
 }
-.team-content h2{
+p.max-height{
+    max-height: 70px;
+}
+.text-content p{
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.text-content h2{
     font-size: 15px;
     margin-bottom: 10px;
     color: orange;
 }
-.team-contents h1{
-    border-bottom: white 3px solid;
-    margin-bottom: 50px;
-}
-.team-content p{
-    overflow: hidden;
-    text-overflow: ellipsis;
- }
-a{
-    text-decoration: none;
-    color: orange;
-}
-.prof-img{
-    width: 20%;
-    height: 200px;
-    margin-right: 80px;
-}
-a.delete-btn{
-    position: absolute;
-    bottom: 2%;
-    left: 30%;
-}
-a.update-btn{
-    position: absolute;
-    bottom: 2%;
-    right: 30%;
-}
- 
- /* 
-============================
-      サクセスメッセージrのCSS
-============================
-*/
-h1.msg-suc{
-    background: rgba(55, 221, 243, 0.5);
-    position: fixed;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    letter-spacing: 7px;
-    color: white;
-    display: none;
+.text-contents h1{
+   border-bottom: white 3px solid;
+   margin-bottom: 50px;
 }
