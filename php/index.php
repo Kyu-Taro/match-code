@@ -1,5 +1,5 @@
 <?php
-require_once('function.php');
+require('function.php');
 //ヘッダーとフッターに使うリンク
     $url1="register-view.php";
     $url2="login-view.php";
