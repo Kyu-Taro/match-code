@@ -131,8 +131,8 @@ header ul li a:hover{
 .text-contents{
     overflow: hidden;
     margin-bottom: 50px;
-    max-height: 400px;
-    min-height: 400px;
+    max-height: 1200px;
+    min-height: 1200px;
     overflow: auto;
     padding-top: 150px;
 }
@@ -156,6 +156,7 @@ header ul li a:hover{
 }
 p.max-height{
     max-height: 70px;
+    max-width: 151.59px;
 }
 .text-content p{
    overflow: hidden;
@@ -169,4 +170,8 @@ p.max-height{
 .text-contents h1{
    border-bottom: white 3px solid;
    margin-bottom: 50px;
+}
+a{
+    color: orange;
+    text-decoration: none;
 }
