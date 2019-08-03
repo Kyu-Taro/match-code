@@ -6,29 +6,19 @@
     $url1="Logout.php";
     $url2="create-view.php";
     $url3="myPage-view.php";
-    $url4="team-view.php";
+    $url4="post-view.php";
     $url5="../html/detail.html";
     $url6="setting.php";
     $link1="Logout";
     $link2="Create";
     $link3="Mypage";
-    $link4="Team";
+    $link4="Post";
     $link5="Detail";
     $link6="Setting";
 
     //ユーザー情報の所得
     try{
         $db=getDb();
-        // $sql='SELECT * FROM users WHERE delete_flg = 0';
-        // $data=[];
-        // $result=queryPost($sql,$data,$db);
-        // $users=$result->fetch(PDO::FETCH_ASSOC);
-
-        // $sql='SELECT T.id,U.id AS user_id,T.title,T.number,U.name,C.name AS team_name,T.text FROM texts AS T JOIN teams AS C ON T.id = C.id JOIN users AS U ON T.user_id = U.id AND T.delete_flg = 0';
-        // $data=[];
-        // $result=queryPost($sql,$data,$db);
-        // $texts=$result->fetchAll();
-
         $sql='SELECT T.id,T.name,T.text,U.name AS user_name,U.id AS user_id FROM teams AS T JOIN users AS U ON T.user_id = U.id AND T.delete_flg = 0';
         $data=[];
         $result=queryPost($sql,$data,$db);
