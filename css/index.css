@@ -211,8 +211,8 @@ h1.msg-suc{
     background: rgba(55, 221, 243, 0.5);
     position: fixed;
     width: 100%;
-    height: 45px;
-    line-height: 45px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 7px;
     color: white;
