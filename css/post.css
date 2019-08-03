@@ -151,7 +151,7 @@ header ul li a:hover{
     min-height: 300px;
     max-height: 300px;
     background: rgba(0, 0, 0, 0.356);
-    margin-bottom: 255px;
+    margin-bottom: 20px;
     position: relative;
 }
 p.max-height{
