@@ -117,18 +117,18 @@ header ul li a:hover{
         トップページのCSS
 =============================
  */
- .post-section{
+ .team-section{
     height: 1400px;
     background-image: url('../img/myPage-top.jpg');
     background-size: cover;
     color: white;
 }
-.post-container{
+.team-container{
     height: 1400px;
     background: #00000094;
     display: none;
 }
-.text-contents{
+.team-contents{
     overflow: hidden;
     margin-bottom: 50px;
     max-height: 1200px;
@@ -136,10 +136,10 @@ header ul li a:hover{
     overflow: auto;
     padding-top: 150px;
 }
-.text-content h2,p{
+.team-content h2,p{
     display: inline-block;
 }
-.text-content{
+.team-content{
     width: 22%;
     overflow: hidden;
     float: left;
@@ -158,16 +158,16 @@ p.max-height{
     max-height: 70px;
     max-width: 151.59px;
 }
-.text-content p{
+.team-content p{
    overflow: hidden;
    text-overflow: ellipsis;
 }
-.text-content h2{
+.team-content h2{
     font-size: 15px;
     margin-bottom: 10px;
     color: orange;
 }
-.text-contents h1{
+.team-contents h1{
    border-bottom: white 3px solid;
    margin-bottom: 50px;
 }

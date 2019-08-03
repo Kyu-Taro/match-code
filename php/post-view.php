@@ -19,20 +19,10 @@
     //ユーザー情報の所得
     try{
         $db=getDb();
-        // $sql='SELECT * FROM users WHERE delete_flg = 0';
-        // $data=[];
-        // $result=queryPost($sql,$data,$db);
-        // $users=$result->fetch(PDO::FETCH_ASSOC);
-
         $sql='SELECT T.id,U.id AS user_id,T.title,T.number,U.name,C.name AS team_name,T.text FROM texts AS T JOIN teams AS C ON T.id = C.id JOIN users AS U ON T.user_id = U.id AND T.delete_flg = 0';
         $data=[];
         $result=queryPost($sql,$data,$db);
         $texts=$result->fetchAll();
-
-        // $sql='SELECT * FROM teams WHERE user_id = :id AND delete_flg = 0';
-        // $data=[':id'=>$id];
-        // $result=queryPost($sql,$data,$db);
-        // $teams=$result->fetchAll();
     }catch(Exception $e){
         debug('ユーザー情報所得エラー:'.$e->getMessage());
     }
