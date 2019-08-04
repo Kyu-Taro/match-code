@@ -118,13 +118,13 @@ header ul li a:hover{
 =============================
  */
  .myPage-section{
-     height: 1800px;
+     height: 1600px;
      background-image: url('../img/myPage-top.jpg');
      background-size: cover;
      color: white;
  }
  .myPage-container{
-     height: 1800px;
+     height: 1600px;
      background: #00000094;
      display: none;
  }
@@ -219,7 +219,6 @@ header ul li a:hover{
     border-bottom: white 3px solid;
     margin-bottom: 25px;
  }
-}
 .team-content p{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -242,6 +241,33 @@ a.update-btn{
     position: absolute;
     bottom: 2%;
     right: 30%;
+}
+.entory-content h2,p{
+    display: inline-block;
+}
+.entory-content{
+    width: 22%;
+    overflow: hidden;
+    float: left;
+    border: solid white 2px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    min-height: 160px;
+    max-height: 160px;
+    background: rgba(0, 0, 0, 0.356);
+    margin-bottom: 10px;
+    position: relative;
+}
+.entory-content h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: orange;
+}
+.entory-contents h1{
+   border-bottom: white 3px solid;
+   margin-bottom: 25px;
 }
  
  /* 
