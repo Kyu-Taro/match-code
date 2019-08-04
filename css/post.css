@@ -129,13 +129,18 @@ header ul li a:hover{
     display: none;
 }
 .text-contents{
-    overflow: hidden;
     margin-bottom: 50px;
-    max-height: 1200px;
-    min-height: 1200px;
-    overflow: auto;
     padding-top: 150px;
 }
+.content-wrap{
+    overflow: hidden;
+    max-height: 1000px;
+    min-height: 1000px;
+    overflow: auto;
+}
+.content-wrap::-webkit-scrollbar{width:10px;}/*バーの太さ*/
+.content-wrap::-webkit-scrollbar-track{background:#00000082;}/*バーの背景色*/
+.content-wrap::-webkit-scrollbar-thumb{background:#ffffff24;border-radius:10px;}/*バーの色*/
 .text-content h2,p{
     display: inline-block;
 }
@@ -154,13 +159,15 @@ header ul li a:hover{
     margin-bottom: 20px;
     position: relative;
 }
-p.max-height{
-    max-height: 70px;
-    max-width: 151.59px;
+.max-height{
+    max-height: 50px;
+    max-width: 100%;
+    overflow: hidden;
 }
-.text-content p{
-   overflow: hidden;
-   text-overflow: ellipsis;
+.max-height2{
+    max-height: 70px;
+    max-width: 100%;
+    overflow: hidden;
 }
 .text-content h2{
     font-size: 15px;

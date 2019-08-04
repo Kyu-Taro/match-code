@@ -43,17 +43,19 @@
     <h1 class="msg-suc"><?php if(!empty($_SESSION['msg-suc'])) echo getSession('msg-suc') ?></h1>
         <div class="post-container">
             <div class="site-width">
-                <div class="text-contents">
+                <div class="text-contents">                    
                     <h1>投稿一覧</h1>
-                    <?php foreach($texts as $text){?>
-                        <div class="text-content">
-                            <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
-                            <p>募集人数:<?php echo $text['number']?>名</p><br/>
-                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $text['user_id']?>"><?php echo sani($text['name'])?></a></p><br/>
-                            <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['team_name'])?></a></p>
-                            <p class="max-height">募集内容:<br/><?php echo $text['text']?></p><br/>
-                        </div>
-                    <?php }?>
+                    <div class="content-wrap">
+                        <?php foreach($texts as $text){?>
+                            <div class="text-content">
+                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2 class="max-height"><?php echo sani($text['title'])?></h2></a><br/>
+                                <p class="max-height">募集人数:<?php echo $text['number']?>名</p><br/>
+                                <p class="max-height">リーダー:<a href="myPage-view.php?user_id=<?php echo $text['user_id']?>"><?php echo sani($text['name'])?></a></p><br/>
+                                <p class="max-height">チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['team_name'])?></a></p>
+                                <p class="max-height2">募集内容:<br/><?php echo $text['text']?></p><br/>
+                            </div>
+                        <?php }?>
+                    </div>
                 </div>
             </div>
         </div>

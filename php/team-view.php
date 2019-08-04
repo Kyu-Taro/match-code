@@ -45,14 +45,16 @@
             <div class="site-width">
                 <div class="team-contents">
                     <h1>チーム一覧</h1>
-                    <?php foreach($teams as $team){?>
-                        <div class="team-content">
-                            <a href="postDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['name'])?></h2></a><br/>
-                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $team['user_id']?>"><?php echo sani($team['user_name'])?></a></p><br/>
-                            <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $team['id']?>"><?php echo sani($team['name'])?></a></p>
-                            <p class="max-height">募集内容:<br/><?php echo $team['text']?></p><br/>
-                        </div>
-                    <?php }?>
+                    <div class="content-wrap">
+                        <?php foreach($teams as $team){?>
+                            <div class="team-content">
+                                <a href="postDetail-view.php?id=<?php echo $team['id']?>"><h2 class="max-height"><?php echo sani($team['name'])?></h2></a><br/>
+                                <p class="max-height">リーダー:<a href="myPage-view.php?user_id=<?php echo $team['user_id']?>"><?php echo sani($team['user_name'])?></a></p><br/>
+                                <p class="max-height">チーム名:<a href="teamDetail-view.php?id=<?php echo $team['id']?>"><?php echo sani($team['name'])?></a></p>
+                                <p class="max-height2">募集内容:<br/><?php echo $team['text']?></p><br/>
+                            </div>
+                        <?php }?>
+                    </div>
                 </div>
             </div>
         </div>
