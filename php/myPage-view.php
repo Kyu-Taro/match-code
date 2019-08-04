@@ -120,8 +120,11 @@
                             <div class="entory-content">
                                 <a href="teamDetail-view.php?id=<?php echo $item['team_id']?>"><h2 class="max-height"><?php echo sani($item['team_name'])?></h2></a><br/>
                                 申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2 class="max-height"><?php echo sani($item['name'])?></h2></a><br/>
-                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">承諾</a>'?>
-                                <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">断る</a>'?>
+                                <form action="decision.php" method="POST">
+                                    <input type="hidden" name="hidden" value="<?php echo $item['id']?>">
+                                    <input type="submit" value="承諾" name="submit">
+                                    <input type="submit" value="断る" name="submit">
+                                </form>
                             </div>
                         <?php }?>
                     </div>

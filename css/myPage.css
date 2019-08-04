@@ -279,6 +279,15 @@ a.update-btn{
    border-bottom: white 3px solid;
    margin-bottom: 25px;
 }
+input[type="submit"]{
+    background: none;
+    border: none;
+    color: orange;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
  
  /* 
 ============================
