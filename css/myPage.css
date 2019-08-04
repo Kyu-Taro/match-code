@@ -168,10 +168,16 @@ header ul li a:hover{
      margin-bottom: 10px;
      position: relative;
  }
- p.max-height{
-     max-height: 70px;
-     max-width: 151.58px;
- }
+ .max-height{
+    max-height: 50px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.max-height2{
+    max-height: 70px;
+    max-width: 100%;
+    overflow: hidden;
+}
  .text-content p{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -299,4 +305,5 @@ h1.msg-suc{
     letter-spacing: 7px;
     color: white;
     display: none;
+    z-index: 20;
 }

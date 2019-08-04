@@ -217,4 +217,5 @@ h1.msg-suc{
     letter-spacing: 7px;
     color: white;
     display: none;
+    z-index: 20;
 }

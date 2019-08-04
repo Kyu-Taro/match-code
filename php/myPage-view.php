@@ -87,9 +87,9 @@
                     <div class="content-wrap">
                         <?php foreach($teams as $team){?>
                             <div class="team-content">
-                                <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['team_name'])?></h2></a><br/>
-                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                                <p class="max-height">活動内容:<br/><?php echo sani($team['text'])?></p><br/>
+                                <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2 class="max-height"><?php echo sani($team['team_name'])?></h2></a><br/>
+                                <p class="max-height">リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
+                                <p class="max-height2">活動内容:<br/><?php echo sani($team['text'])?></p><br/>
                                 <?php if($my_flg) echo '<a class="delete-btn" href="delete-team.php?id='.$team['id'].'">削除</a>'?>
                                 <?php if($my_flg) echo '<a class="update-btn" href="update-team.php?id='.$team['id'].'">編集</a>'?>
                             </div>
@@ -101,11 +101,11 @@
                     <div class="content-wrap">
                         <?php foreach($texts as $text){?>
                             <div class="text-content">
-                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
-                                <p>募集人数:<?php echo $text['number']?>名</p><br/>
-                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                                <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
-                                <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
+                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2 class="max-height"><?php echo sani($text['title'])?></h2></a><br/>
+                                <p class="max-height">募集人数:<?php echo $text['number']?>名</p><br/>
+                                <p class="max-height">リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
+                                <p class="max-height">チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
+                                <p class="max-height2">募集内容:<br/><?php echo $text['text_name']?></p><br/>
                                 <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
                                 <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
                             </div>
@@ -118,8 +118,8 @@
                     <div class="content-wrap">
                         <?php foreach($items as $item){?>
                             <div class="entory-content">
-                                <a href="teamDetail-view.php?id=<?php echo $item['team_id']?>"><h2><?php echo sani($item['team_name'])?></h2></a><br/>
-                                申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2><?php echo sani($item['name'])?></h2></a><br/>
+                                <a href="teamDetail-view.php?id=<?php echo $item['team_id']?>"><h2 class="max-height"><?php echo sani($item['team_name'])?></h2></a><br/>
+                                申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2 class="max-height"><?php echo sani($item['name'])?></h2></a><br/>
                                 <form action="decision.php" method="POST">
                                     <input type="hidden" name="hidden" value="<?php echo $item['id']?>">
                                     <input type="submit" value="承諾" name="submit">

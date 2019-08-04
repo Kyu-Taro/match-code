@@ -180,7 +180,16 @@ function errBr($str){
 //入力保持関数 $_GETのときは第２引数にfalseを入れる
 function getPost($str, $post_flg = true){
     $method = ($post_flg) ? $_POST : $_GET;
-    if(!empty($method[$str])){
-        return $method[$str];
+    global $users;
+    if(!empty($users)){
+        if(!empty($err_msg)){
+            return $method[$str];
+        }else{
+            return $users[$str];
+        }
+    }else{
+        if(!empty($method[$str])){
+            return $method[$str];
+        }
     }
 }
