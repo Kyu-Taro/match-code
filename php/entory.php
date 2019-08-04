@@ -3,7 +3,7 @@
 
     //該当する記事のIDを所得
     $text_id=$_GET['id'];
-    $id=$_SESSSION['user_id'];
+    $id=$_SESSION['user_id'];
     
 
     //該当するIDの記事もしくはチームのリーダーの情報を所得
@@ -14,7 +14,10 @@
         $result=queryPost($sql,$data,$db);
         $items=$result->fetch(PDO::FETCH_ASSOC);
         $user_id=$items['user_id'];
-        debug(print_r($user_id,true));
+        
+        $sql='INSERT INTO entory(eh_id,rd_id,decision,created_at,pj_id) VALUES(:id,:user_id,:decision,:created_at,:pj_id)';
+        $data=[':id'=>$id,':user_id'=>$user_id,'decision'=>0,':created_at'=>date("Y/m/d H:i:s"),':pj_id'=>$text_id];
+        $result=queryPost($sql,$data,$db);
     }catch(Exception $e){
         debug('エラー:'.$e->getMessage());
     }
