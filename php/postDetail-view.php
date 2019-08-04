@@ -26,8 +26,10 @@
         $data=[':user_id'=>$user_id,':text_id'=>$text_id];
         $result=queryPost($sql,$data,$db);
         $item=$result->fetch(PDO::FETCH_ASSOC);
-        if(array_shift($item)){
+        if($item){
             $entory_flg=true;
+        }else{
+            $entory_flg=false;
         }
     }catch(Exception $e){
         debug('エラー:'.$e->getMessage());
@@ -80,7 +82,7 @@
                     <form action="entory.php?id=<?php echo $text_id?>" method="POST"> 
                         <?php if($entory_flg){?>
                             <input class="select-btn" type="submit" value="申請済み" disabled>
-                        <?php }else{?>
+                        <?php }else if($entory_flg == false){?>
                             <input type="submit" value="参加申請">
                         <?php }?>
                     </form>
