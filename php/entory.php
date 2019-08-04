@@ -18,6 +18,8 @@
         $sql='INSERT INTO entory(eh_id,rd_id,decision,created_at,pj_id) VALUES(:id,:user_id,:decision,:created_at,:pj_id)';
         $data=[':id'=>$id,':user_id'=>$user_id,'decision'=>0,':created_at'=>date("Y/m/d H:i:s"),':pj_id'=>$text_id];
         $result=queryPost($sql,$data,$db);
+
+        header('Location:myPage-view.php');
     }catch(Exception $e){
         debug('エラー:'.$e->getMessage());
     }
