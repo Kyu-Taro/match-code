@@ -3742,3 +3742,11 @@ Stack trace:
 [02-Aug-2019 14:50:06 UTC] デバッグ:ログイン有効期限内です
 [02-Aug-2019 14:50:08 UTC] デバッグ:ログイン有効期限内です
 [02-Aug-2019 14:50:08 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:50:15 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:50:27 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:50:31 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:50:36 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:50:36 UTC] PHP Warning:  array_shift() expects parameter 1 to be array, bool given in /Applications/MAMP/htdocs/match-code/php/teamDetail-view.php on line 29
+[04-Aug-2019 09:50:36 UTC] PHP Notice:  Undefined variable: entory_flg in /Applications/MAMP/htdocs/match-code/php/teamDetail-view.php on line 89
+[04-Aug-2019 09:50:38 UTC] デバッグ:ログイン有効期限内です
+[04-Aug-2019 09:51:14 UTC] デバッグ:ログイン有効期限内です
