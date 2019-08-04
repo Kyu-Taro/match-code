@@ -77,32 +77,53 @@
                         <dd><?php echo sani($users['prof'])?></dd>
                     </dl>
                 </div>
-                <div class="text-contents">
-                    <h1>投稿一覧</h1>
-                    <?php foreach($texts as $text){?>
-                        <div class="text-content">
-                            <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
-                            <p>募集人数:<?php echo $text['number']?>名</p><br/>
-                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                            <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
-                            <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
-                            <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
-                            <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
-                        </div>
-                    <?php }?>
-                </div>
                 <div class="team-contents">
                     <h1>所属チーム</h1>
-                    <?php foreach($teams as $team){?>
-                        <div class="team-content">
-                            <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['name'])?></h2></a><br/>
-                            <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                            <p class="max-height">活動内容:<br/><?php echo sani($team['text'])?></p><br/>
-                            <?php if($my_flg) echo '<a class="delete-btn" href="delete-team.php?id='.$team['id'].'">削除</a>'?>
-                            <?php if($my_flg) echo '<a class="update-btn" href="update-team.php?id='.$team['id'].'">編集</a>'?>
-                        </div>
-                    <?php } ?>
+                    <div class="content-wrap">
+                        <?php foreach($teams as $team){?>
+                            <div class="team-content">
+                                <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['name'])?></h2></a><br/>
+                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
+                                <p class="max-height">活動内容:<br/><?php echo sani($team['text'])?></p><br/>
+                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-team.php?id='.$team['id'].'">削除</a>'?>
+                                <?php if($my_flg) echo '<a class="update-btn" href="update-team.php?id='.$team['id'].'">編集</a>'?>
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
+                <div class="text-contents">
+                    <h1>募集中</h1>
+                    <div class="content-wrap">
+                        <?php foreach($texts as $text){?>
+                            <div class="text-content">
+                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
+                                <p>募集人数:<?php echo $text['number']?>名</p><br/>
+                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
+                                <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
+                                <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
+                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
+                                <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
+                            </div>
+                        <?php }?>
+                    </div>
+                </div>
+                <div class="text-contents">
+                    <h1>申請者一覧</h1>
+                    <div class="content-wrap">
+                        <?php foreach($texts as $text){?>
+                            <div class="text-content">
+                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
+                                <p>募集人数:<?php echo $text['number']?>名</p><br/>
+                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
+                                <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
+                                <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
+                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
+                                <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
+                            </div>
+                        <?php }?>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
