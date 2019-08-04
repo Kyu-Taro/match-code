@@ -37,10 +37,15 @@
         $result=queryPost($sql,$data,$db);
         $texts=$result->fetchAll();
 
-        $sql='SELECT * FROM teams WHERE user_id = :id AND delete_flg = 0';
-        $data=[':id'=>$id];
+        $sql='SELECT T.id AS id,T.name AS team_name,U.name AS name,T.text AS text FROM affiliation AS A JOIN teams AS T ON A.team_id = T.id AND T.delete_flg = 0 AND A.user_id = :user_id JOIN users AS U ON T.user_id = U.id';
+        $data=[':user_id'=>$id];
         $result=queryPost($sql,$data,$db);
         $teams=$result->fetchAll();
+
+        $sql='SELECT U.name AS name,T.name AS team_name,A.id AS id,U.id AS user_id,T.id AS team_id FROM entory AS A JOIN users AS U ON A.eh_id = U.id AND A.delete_flg = 0 AND decision = 0 JOIN teams AS T ON A.pj_id = T.id AND A.rd_id = :id';
+        $data=[':id'=>$id];
+        $result=queryPost($sql,$data,$db);
+        $items=$result->fetchAll();
     }catch(Exception $e){
         debug('ユーザー情報所得エラー:'.$e->getMessage());
     }
@@ -82,7 +87,7 @@
                     <div class="content-wrap">
                         <?php foreach($teams as $team){?>
                             <div class="team-content">
-                                <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['name'])?></h2></a><br/>
+                                <a href="teamDetail-view.php?id=<?php echo $team['id']?>"><h2><?php echo sani($team['team_name'])?></h2></a><br/>
                                 <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
                                 <p class="max-height">活動内容:<br/><?php echo sani($team['text'])?></p><br/>
                                 <?php if($my_flg) echo '<a class="delete-btn" href="delete-team.php?id='.$team['id'].'">削除</a>'?>
@@ -107,23 +112,21 @@
                         <?php }?>
                     </div>
                 </div>
-                <div class="text-contents">
+                <?php if($my_flg){?>
+                <div class="entory-contents">
                     <h1>申請者一覧</h1>
                     <div class="content-wrap">
-                        <?php foreach($texts as $text){?>
-                            <div class="text-content">
-                                <a href="postDetail-view.php?id=<?php echo $text['id']?>"><h2><?php echo sani($text['title'])?></h2></a><br/>
-                                <p>募集人数:<?php echo $text['number']?>名</p><br/>
-                                <p>リーダー:<a href="myPage-view.php?user_id=<?php echo $id?>"><?php echo sani($users['name'])?></a></p><br/>
-                                <p>チーム名:<a href="teamDetail-view.php?id=<?php echo $text['id']?>"><?php echo sani($text['name'])?></a></p>
-                                <p class="max-height">募集内容:<br/><?php echo $text['text_name']?></p><br/>
-                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">削除</a>'?>
-                                <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">編集</a>'?>
+                        <?php foreach($items as $item){?>
+                            <div class="entory-content">
+                                <a href="teamDetail-view.php?id=<?php echo $item['team_id']?>"><h2><?php echo sani($item['team_name'])?></h2></a><br/>
+                                申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2><?php echo sani($item['name'])?></h2></a><br/>
+                                <?php if($my_flg) echo '<a class="delete-btn" href="delete-post.php?id='.$text['id'].'">承諾</a>'?>
+                                <?php if($my_flg) echo '<a class="update-btn" href="update-post.php?id='.$text['id'].'">断る</a>'?>
                             </div>
                         <?php }?>
                     </div>
                 </div>
-                
+                <?php }?>
             </div>
         </div>
     </section>
