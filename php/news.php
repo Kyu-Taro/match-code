@@ -21,7 +21,7 @@
     //ユーザー情報の所得
     try{
         $db=getDb();
-        $sql='SELECT U.id AS id,U.name,U.email,E.updated_at FROM entory AS E JOIN users AS U ON E.eh_id = U.id AND rd_id = :id AND decision = 1 ORDER BY  created_at DESC';
+        $sql='SELECT U.id AS id,U.name,U.email,E.updated_at,E.decision FROM entory AS E JOIN users AS U ON E.eh_id = U.id AND rd_id = :id AND not decision = 0 ORDER BY created_at DESC';
         $data=['id'=>$user_id];
         $result=queryPost($sql,$data,$db);
         $permissions=$result->fetchAll();
@@ -50,7 +50,12 @@
                     <div class="content-wrap">
                         <?php foreach($permissions as $permission){?>
                             <div class="text-content">
-                                <p>【<?php echo date('Y/m/d H:i',strtotime($permission['updated_at']))?>】  参加申請のあった<a href="myPage-view.php?user_id=<?php echo $permission['id']?>"><?php echo $permission['name']?></a>さんの申請を許可しました。<span class="color"><?php echo $permission['email']?></span>に連絡をしましょう。</p> </div>
+                                <?php if($permission['decision'] == 1){?>
+                                <p>【<?php echo date('Y/m/d H:i',strtotime(sani($permission['updated_at'])))?>】  参加申請のあった<a href="myPage-view.php?user_id=<?php echo $permission['id']?>"><?php echo sani($permission['name'])?></a>さんの申請を許可しました。<span class="color"><?php echo sani($permission['email'])?></span>に連絡をしましょう。</p>
+                                <?php }else if($permission['decision'] == 2){?>
+                                <p>【<?php echo date('Y/m/d H:i',strtotime(sani($permission['updated_at'])))?>】  参加申請のあった<a href="myPage-view.php?user_id=<?php echo $permission['id']?>"><?php echo sani($permission['name'])?></a>さんの申請を拒否しました。</p>
+                                <?php } ?>
+                            </div>
                         <?php }?>
                     </div>
                 </div>
