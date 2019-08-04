@@ -9,12 +9,14 @@
     $url4="team-view.php";
     $url5="../html/detail.html";
     $url6="setting.php";
+    $url7="news.php";
     $link1="Logout";
     $link2="Create";
     $link3="Post";
     $link4="Team";
     $link5="Detail";
     $link6="Setting";
+    $link7="News";
 
     if (!empty($_GET)) {
         $id=$_GET['user_id'];
@@ -46,6 +48,7 @@
         $data=[':id'=>$id];
         $result=queryPost($sql,$data,$db);
         $items=$result->fetchAll();
+
     }catch(Exception $e){
         debug('ユーザー情報所得エラー:'.$e->getMessage());
     }
