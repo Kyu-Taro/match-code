@@ -157,3 +157,6 @@ input[type="submit"]{
     cursor: pointer;
     margin-top: 15px;
 }
+input.select-btn{
+    background: #666;
+}

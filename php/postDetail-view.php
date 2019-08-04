@@ -17,6 +17,21 @@
     $link6="Mypage";
 
     $text_id=$_GET['id'];
+    $user_id=$_SESSION['user_id'];
+
+    //申請しているかを判定する
+    try{
+        $db=getDb();
+        $sql='SELECT * FROM entory WHERE eh_id = :user_id AND  pj_id = :text_id';
+        $data=[':user_id'=>$user_id,':text_id'=>$text_id];
+        $result=queryPost($sql,$data,$db);
+        $item=$result->fetch(PDO::FETCH_ASSOC);
+        if(array_shift($item)){
+            $entory_flg=true;
+        }
+    }catch(Exception $e){
+        debug('エラー:'.$e->getMessage());
+    }
 
     try{
         $db=getDb();
@@ -62,8 +77,12 @@
                         <p>【現在の人数】<?php echo sani($aff['number'])?>人</p><br/>
                         <p>【チーム名】<a href="teamDetail-view.php?id=<?php echo $text_id?>"><?php echo sani($teams['name'])?></a></p><br/>
                         <p>【内容】</td><td><?php echo sani($items['text'])?></p><br/>
-                    <form action="entory.php?id=<?php echo $text_id?>" method="POST">
-                        <input type="submit" value="参加申請">
+                    <form action="entory.php?id=<?php echo $text_id?>" method="POST"> 
+                        <?php if($entory_flg){?>
+                            <input class="select-btn" type="submit" value="申請済み" disabled>
+                        <?php }else{?>
+                            <input type="submit" value="参加申請">
+                        <?php }?>
                     </form>
                 </div>
             </div>

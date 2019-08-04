@@ -17,6 +17,21 @@
     $link6="Mypage";
 
     $team_id=$_GET['id'];
+    $user_id=$_SESSION['user_id'];
+
+    //申請しているかを判定する
+    try{
+        $db=getDb();
+        $sql='SELECT * FROM entory WHERE eh_id = :user_id AND  pj_id = :text_id';
+        $data=[':user_id'=>$user_id,':text_id'=>$team_id];
+        $result=queryPost($sql,$data,$db);
+        $item=$result->fetch(PDO::FETCH_ASSOC);
+        if(array_shift($item)){
+            $entory_flg=true;
+        }
+    }catch(Exception $e){
+        debug('エラー:'.$e->getMessage());
+    }
 
     try{
         $db=getDb();
@@ -71,7 +86,11 @@
                         <p>【募集投稿】<a href="postDetail-view.php?id=<?php echo $team_id?>"><?php echo sani($text['title'])?></a></p><br/>
                         <p>【活動内容】</td><td><?php echo sani($items['text'])?></p><br/>
                     <form action="entory.php?id=<?php echo $team_id?>" method="POST">
-                        <input type="submit" value="参加申請">
+                        <?php if($entory_flg){?>
+                            <input class="select-btn" type="submit" value="申請済み" disabled>
+                        <?php }else{?>
+                            <input type="submit" value="参加申請">
+                        <?php }?>
                     </form>
                 </div>
             </div>
