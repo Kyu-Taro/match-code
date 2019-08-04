@@ -119,7 +119,7 @@
                         <?php foreach($items as $item){?>
                             <div class="entory-content">
                                 <a href="teamDetail-view.php?id=<?php echo $item['team_id']?>"><h2 class="max-height"><?php echo sani($item['team_name'])?></h2></a><br/>
-                                申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2 class="max-height"><?php echo sani($item['name'])?></h2></a><br/>
+                                申請者:<a href="myPage-view.php?user_id=<?php echo $item['user_id']?>"><h2><?php echo sani($item['name'])?></h2></a><br/>
                                 <form action="decision.php" method="POST">
                                     <input type="hidden" name="hidden" value="<?php echo $item['id']?>">
                                     <input type="submit" value="承諾" name="submit">
