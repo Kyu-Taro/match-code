@@ -7,7 +7,7 @@
     $url2="create-view.php";
     $url3="post-view.php";
     $url4="team-view.php";
-    $url5="../html/detail.html";
+    $url5="detail.php";
     $url6="setting.php";
     $url7="news.php";
     $link1="Logout";

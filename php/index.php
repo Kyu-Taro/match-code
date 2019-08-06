@@ -5,7 +5,7 @@ require('function.php');
     $url2="login-view.php";
     $url3="post-view.php";
     $url4="team-view.php";
-    $url5="../html/detail.html";
+    $url5="detail.php";
     $url6="myPage-view.php";
     $link1="Regist";
     $link2="Login";
@@ -60,7 +60,7 @@ require('function.php');
                 また、募集チームの回覧、チームのメンバーの確認など<br/>
                 チーム参加からチーム作成、開発までの流れを以下で確認できます<br/>
             </p>
-            <a href="detail.html" class="detail-link">Click here for details</a>
+            <a href="detail.php" class="detail-link">Click here for details</a>
         </div>
     </section>
     <?php include('footer.php')?>
