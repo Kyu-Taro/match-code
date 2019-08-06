@@ -3750,3 +3750,5 @@ Stack trace:
 [04-Aug-2019 09:50:36 UTC] PHP Notice:  Undefined variable: entory_flg in /Applications/MAMP/htdocs/match-code/php/teamDetail-view.php on line 89
 [04-Aug-2019 09:50:38 UTC] デバッグ:ログイン有効期限内です
 [04-Aug-2019 09:51:14 UTC] デバッグ:ログイン有効期限内です
+[06-Aug-2019 21:07:51 Asia/Tokyo] PHP Notice:  Undefined variable: url7 in C:\xampp\htdocs\match-code\php\header.php on line 11
+[06-Aug-2019 21:07:51 Asia/Tokyo] PHP Notice:  Undefined variable: link7 in C:\xampp\htdocs\match-code\php\header.php on line 11
