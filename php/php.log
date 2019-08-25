@@ -3752,3 +3752,143 @@ Stack trace:
 [04-Aug-2019 09:51:14 UTC] デバッグ:ログイン有効期限内です
 [06-Aug-2019 21:07:51 Asia/Tokyo] PHP Notice:  Undefined variable: url7 in C:\xampp\htdocs\match-code\php\header.php on line 11
 [06-Aug-2019 21:07:51 Asia/Tokyo] PHP Notice:  Undefined variable: link7 in C:\xampp\htdocs\match-code\php\header.php on line 11
+[18-Aug-2019 11:58:55 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[18-Aug-2019 11:58:55 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[18-Aug-2019 11:58:55 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[18-Aug-2019 11:58:55 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:08:43 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:08:43 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:11:07 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:11:07 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:22 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:22 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:32 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:32 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:35 UTC] デバッグ:ログインしていません
+[25-Aug-2019 06:13:35 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/match-code/php/myPage-view.php on line 25
+[25-Aug-2019 06:13:35 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:35 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:37 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:37 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:55 UTC] デバッグ:ログインしていません
+[25-Aug-2019 06:13:55 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/match-code/php/myPage-view.php on line 25
+[25-Aug-2019 06:13:55 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:55 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:57 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:57 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:57 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:13:57 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:10 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:10 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:11 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:11 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:13 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:13 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:23 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:23 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:25 UTC] デバッグ:ログインしていません
+[25-Aug-2019 06:14:25 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/match-code/php/myPage-view.php on line 25
+[25-Aug-2019 06:14:25 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:14:25 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:21 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:21 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:27 UTC] デバッグ:POST送信があります
+[25-Aug-2019 06:15:27 UTC] POSTの中身Array
+(
+    [email] => gtnine999@gmail.com
+    [pass] => 9999
+)
+
+[25-Aug-2019 06:15:27 UTC] errの中身Array
+(
+)
+
+[25-Aug-2019 06:15:27 UTC] 入力チェックOKです
+[25-Aug-2019 06:15:27 UTC] 形式チェックOKです
+[25-Aug-2019 06:15:27 UTC] デバッグ:パスワードが合いません
+[25-Aug-2019 06:15:27 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:27 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:37 UTC] デバッグ:POST送信があります
+[25-Aug-2019 06:15:37 UTC] POSTの中身Array
+(
+    [email] => amiti9999@icloud.com
+    [pass] => 9999
+)
+
+[25-Aug-2019 06:15:37 UTC] errの中身Array
+(
+)
+
+[25-Aug-2019 06:15:37 UTC] 入力チェックOKです
+[25-Aug-2019 06:15:37 UTC] 形式チェックOKです
+[25-Aug-2019 06:15:37 UTC] パスワードが一致しました
+[25-Aug-2019 06:15:37 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:15:42 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:15:42 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:42 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:15:44 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:04 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:18 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:43 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:43 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:16:43 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:16:52 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:52 UTC] PHP Warning:  move_uploaded_file(../img/uploads/856b7698a5b26939aad2756019abcc50f31e8739.jpeg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/match-code/php/function.php on line 149
+[25-Aug-2019 06:16:52 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/Applications/MAMP/tmp/php/phpg6OsuW' to '../img/uploads/856b7698a5b26939aad2756019abcc50f31e8739.jpeg' in /Applications/MAMP/htdocs/match-code/php/function.php on line 149
+[25-Aug-2019 06:16:52 UTC] PHP Fatal error:  Uncaught Error: Class 'EuntimeException' not found in /Applications/MAMP/htdocs/match-code/php/function.php:150
+Stack trace:
+#0 /Applications/MAMP/htdocs/match-code/php/setting.php(53): uploadImg(Array, 'file')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/function.php on line 150
+[25-Aug-2019 06:16:54 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:16:54 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:16:54 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:00 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:17:06 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:17:06 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:06 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:30 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:17:30 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:30 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:53 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:17:56 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:17:56 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:17:56 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:01 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:10 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:10 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:10 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:25 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:25 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:25 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:32 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:32 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:32 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:47 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:47 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:47 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:56 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:56 UTC] PHP Warning:  move_uploaded_file(../img/uploads/856b7698a5b26939aad2756019abcc50f31e8739.jpeg): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/match-code/php/function.php on line 149
+[25-Aug-2019 06:18:56 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/Applications/MAMP/tmp/php/phpH3p8gD' to '../img/uploads/856b7698a5b26939aad2756019abcc50f31e8739.jpeg' in /Applications/MAMP/htdocs/match-code/php/function.php on line 149
+[25-Aug-2019 06:18:56 UTC] PHP Fatal error:  Uncaught Error: Class 'EuntimeException' not found in /Applications/MAMP/htdocs/match-code/php/function.php:150
+Stack trace:
+#0 /Applications/MAMP/htdocs/match-code/php/setting.php(53): uploadImg(Array, 'file')
+#1 {main}
+  thrown in /Applications/MAMP/htdocs/match-code/php/function.php on line 150
+[25-Aug-2019 06:18:57 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:18:57 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:18:57 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:06 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:20:06 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:06 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:28 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:20:28 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:28 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:31 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:20:31 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:31 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:46 UTC] デバッグ:ログイン有効期限内です
+[25-Aug-2019 06:20:46 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:46 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:53 UTC] PHP Notice:  Undefined variable: url7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11
+[25-Aug-2019 06:20:53 UTC] PHP Notice:  Undefined variable: link7 in /Applications/MAMP/htdocs/match-code/php/header.php on line 11

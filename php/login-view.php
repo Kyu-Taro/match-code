@@ -77,7 +77,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
     <title>Match-Code|ログイン</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
@@ -103,6 +103,6 @@
         </section>
     </main>        
     <?php include('footer.php')?>
-    <script src="../js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
